@@ -1,0 +1,10 @@
+@import "../utils/mixins";
+
+.gradientButton{
+    padding: 20px;
+    background:linear-gradient($color-secondary, $color-primary);
+    border-radius: 50px;
+    color: white;
+    border: none;
+    @include box-shadows;
+}

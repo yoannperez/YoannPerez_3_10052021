@@ -1,21 +1,209 @@
 /*logos*/
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /*Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import "./utils/variables";
-/* ----------- Generals ------------ */
-html, body {
-    font-family: 'Montserrat', sans-serif;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  h1, h2, h3, h4, h5, h6{
-    font-family: 'Shrikhand', cursive;
-  }
-  p{
-    font-family: 'Roboto', sans-serif;
-    color: $color-secondary;
-  }
+@import "./components/buttons";
+@import "./utils/mixins";
 
+/* ----------- Generals ------------ */
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: white;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.381);
+  &__logo {
+    height: 2rem;
+  }
+}
+.location {
+  height: 50px;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    p {
+      padding: 5px 20px;
+      font-size: 1.3em;
+    }
+  }
+}
+.reserver {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px 20px;
+  height: 290px;
+  text-align: center;
+  background-color: $bkg-light;
+}
+.fonctionnement {
+  background-color: white;
+  padding: 20px 20px;
+  a {
+    text-decoration: none;
+  }
+}
+.fonctionContainer {
+  display: flex;
+  flex-direction: column;
+  height: 75px;
+  width: 100%;
+
+  &__choice {
+    background-color: $bkg-light;
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px auto;
+    @include box-shadows;
+    border-radius: 20px;
+
+    .number {
+      position: relative;
+      left: -15px;
+      padding: 5px 10px;
+      background-color: $color-primary;
+      color: white;
+      border-radius: 50px;
+    }
+    i {
+      font-size: 1.5em;
+      color: gray;
+    }
+    p {
+      padding: 0 30px;
+    }
+  }
+}
+
+
+.restaurants {
+  background-color: $bkg-light;
+  padding: 20px 10px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  a {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+  }
+}
+.blocRestaurant {
+  @include box-shadows;
+  border-radius: 15px;
+  &__img {
+    p{
+        position: absolute;
+        right: 30px;
+        color: #00967C;
+        background-color: #A2E5DA;
+        padding: 5px 15px;
+        border-radius: 3px;
+    }
+    img {
+      border-radius: 15px 15px 0 0;
+      height: 175px;
+      width: 100%;
+      object-position:bottom;
+      object-fit:cover;
+      }
+        
+  }
+  &__footer {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+
+    &Description {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 0;
+      h3, p{
+          margin: 2px;
+          
+      }
+    }
+    &Ico{
+        font-size: 2em;
+        margin-right: 10px;
+    }
+  }
+}
+.footer {
+    background-color: #454545;
+    color: white;
+    padding: 20px;
+    height: 200px;
+    h2 {
+      font-family: "Shrikhand", cursive;
+    }
+  }
+  ul.list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 0 !important;
+    padding-inline-start: 0px !important;
+  
+    li {
+      margin: 5px;
+      p {
+        color: white;
+        margin: 0;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        .__container {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          i {
+              margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
