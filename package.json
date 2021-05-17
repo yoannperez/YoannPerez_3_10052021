@@ -1,0 +1,19 @@
+{
+  "name": "08_ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/CSS/styles.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoannperez/YoannPerez_3_10052021.git"
+  },
+  "author": "Yoann Perez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoannperez/YoannPerez_3_10052021/issues"
+  },
+  "homepage": "https://github.com/yoannperez/YoannPerez_3_10052021#readme"
+}
