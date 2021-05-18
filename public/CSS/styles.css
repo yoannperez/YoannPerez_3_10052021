@@ -29,13 +29,27 @@ p {
   color: black;
 }
 
+.menu h2 {
+  font-family: "Shrikhand", cursive;
+}
+.menu h3 {
+  text-transform: uppercase;
+}
+
+.footer h2 {
+  font-family: "Shrikhand", cursive;
+}
+
 .gradientButton {
+  display: inline;
   padding: 20px;
+  margin: 0 auto;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 50px;
   color: white;
   border: none;
   box-shadow: 0 5px 5px black;
+  text-align: center;
 }
 
 .header {
@@ -63,9 +77,6 @@ p {
   color: white;
   padding: 20px;
   height: 200px;
-}
-.footer h2 {
-  font-family: "Shrikhand", cursive;
 }
 
 ul.list {
@@ -219,6 +230,73 @@ ul.list li a .__container i {
 .blocRestaurant__footerIco {
   font-size: 2em;
   margin-right: 10px;
+}
+
+.menu-img img {
+  height: 250px;
+  width: 100%;
+  object-position: bottom;
+  object-fit: cover;
+}
+
+.menu {
+  position: relative;
+  padding: 30px 15px;
+  background-color: #EEEEEE;
+  border-radius: 30px 30px 0 0;
+  margin-top: -30px;
+  z-index: 1;
+}
+.menu .menuTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .menuTitle i {
+  margin-right: 15px;
+}
+.menu .truc {
+  display: flex;
+}
+.menu span {
+  border-bottom: 2px solid #99E2D0;
+}
+
+.blocPlat {
+  box-shadow: 0 5px 5px black;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 15px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+.blocPlat__description {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.blocPlat__description p {
+  margin: 5px;
+}
+.blocPlat__descriptionPrice {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.blocPlat__selected {
+  display: none;
+  background-color: yellowgreen;
+  margin: 10px 20px;
+}
+.blocPlat:hover {
+  background-color: violet;
+  transform: scale(1.05);
+}
+.blocPlat:hover + .blocPlat__selected {
+  display: block;
 }
 
 /*# sourceMappingURL=styles.css.map */

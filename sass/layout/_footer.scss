@@ -1,36 +1,33 @@
 .footer {
-    background-color: #454545;
-    color: white;
-    padding: 20px;
-    height: 200px;
-    h2 {
-      font-family: "Shrikhand", cursive;
+  background-color: #454545;
+  color: white;
+  padding: 20px;
+  height: 200px;
+}
+ul.list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 0 !important;
+  padding-inline-start: 0px !important;
+
+  li {
+    margin: 5px;
+    p {
+      color: white;
+      margin: 0;
     }
-  }
-  ul.list {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    margin-block-start: 0 !important;
-    padding-inline-start: 0px !important;
-  
-    li {
-      margin: 5px;
-      p {
-        color: white;
-        margin: 0;
-      }
-      a {
-        text-decoration: none;
-        color: white;
-        .__container {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          i {
-              margin-right: 10px;
-          }
+    a {
+      text-decoration: none;
+      color: white;
+      .__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        i {
+          margin-right: 10px;
         }
       }
     }
   }
+}
