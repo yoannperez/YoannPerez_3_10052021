@@ -5,6 +5,8 @@
 @import "./utils/variables";
 @import "./components/buttons";
 @import "./utils/mixins";
+@import "./layout/header";
+@import "./layout/footer";
 
 /* ----------- Generals ------------ */
 html,
@@ -34,17 +36,7 @@ body {
   max-width: 500px;
 }
 
-.header {
-  background-color: white;
-  height: 65px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.381);
-  &__logo {
-    height: 2rem;
-  }
-}
+
 .location {
   height: 50px;
 
@@ -173,39 +165,3 @@ body {
     }
   }
 }
-.footer {
-    background-color: #454545;
-    color: white;
-    padding: 20px;
-    height: 200px;
-    h2 {
-      font-family: "Shrikhand", cursive;
-    }
-  }
-  ul.list {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    margin-block-start: 0 !important;
-    padding-inline-start: 0px !important;
-  
-    li {
-      margin: 5px;
-      p {
-        color: white;
-        margin: 0;
-      }
-      a {
-        text-decoration: none;
-        color: white;
-        .__container {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          i {
-              margin-right: 10px;
-          }
-        }
-      }
-    }
-  }
