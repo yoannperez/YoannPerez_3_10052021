@@ -39,6 +39,7 @@ p {
 body {
   width: 100%;
   margin: 0 auto;
+  max-width: 500px;
 }
 
 .header {
@@ -139,9 +140,12 @@ body {
   box-shadow: 0 5px 5px black;
   border-radius: 15px;
 }
+.blocRestaurant__img {
+  position: relative;
+}
 .blocRestaurant__img p {
   position: absolute;
-  right: 30px;
+  right: 15px;
   color: #00967C;
   background-color: #A2E5DA;
   padding: 5px 15px;

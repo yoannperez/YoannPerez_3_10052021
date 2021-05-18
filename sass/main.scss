@@ -31,6 +31,7 @@ p {
 body {
   width: 100%;
   margin: 0 auto;
+  max-width: 500px;
 }
 
 .header {
@@ -130,9 +131,10 @@ body {
   @include box-shadows;
   border-radius: 15px;
   &__img {
+    position: relative;
     p{
         position: absolute;
-        right: 30px;
+        right: 15px;
         color: #00967C;
         background-color: #A2E5DA;
         padding: 5px 15px;
