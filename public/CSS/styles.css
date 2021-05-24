@@ -209,6 +209,9 @@ ul.list li a .__container i {
   color: black;
   margin: 0;
 }
+.restaurants a:nth-child(3) .blocRestaurant img {
+  object-position: 0 -165px;
+}
 
 .blocRestaurant {
   box-shadow: 0 0px 10px grey;
@@ -232,7 +235,7 @@ ul.list li a .__container i {
   height: 175px;
   width: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: bottom;
 }
 .blocRestaurant__footer {
   height: 80px;
