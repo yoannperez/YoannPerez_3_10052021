@@ -1,0 +1,41 @@
+//Menu groups
+@keyframes menu-title{
+    from {
+        opacity: 0;
+        transform: scale(0, 1);
+        
+    }
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+        
+    }
+}
+
+//menu-items
+@keyframes menu-items{
+    from {
+      transform:translateY(15px);
+      opacity: 0;
+    }
+    to {
+      transform:translateY(0px);
+      opacity: 1;
+    }
+  }
+  @for $i from 0 through 2{
+    .titleAnim-#{$i}{
+    transform-origin: left;
+    animation: menu-title ease-in-out $menu-title-duration ;
+    animation-fill-mode: both;
+    animation-delay: $i*$fade-delay;
+    }
+  }
+  @for $i from 0 through 2{
+    .anim-#{$i}{
+    transform-origin: bottom;
+    animation: menu-items ease-in-out $fade-duration ;
+    animation-fill-mode: both;
+    animation-delay: (($i*$fade-delay) + ($menu-title-duration /2) );
+    }
+  }

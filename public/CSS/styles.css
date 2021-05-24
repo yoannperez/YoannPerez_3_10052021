@@ -40,6 +40,68 @@ p {
   font-family: "Shrikhand", cursive;
 }
 
+@keyframes menu-title {
+  from {
+    opacity: 0;
+    transform: scale(0, 1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@keyframes menu-items {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.titleAnim-0 {
+  transform-origin: left;
+  animation: menu-title ease-in-out 500ms;
+  animation-fill-mode: both;
+  animation-delay: 0ms;
+}
+
+.titleAnim-1 {
+  transform-origin: left;
+  animation: menu-title ease-in-out 500ms;
+  animation-fill-mode: both;
+  animation-delay: 200ms;
+}
+
+.titleAnim-2 {
+  transform-origin: left;
+  animation: menu-title ease-in-out 500ms;
+  animation-fill-mode: both;
+  animation-delay: 400ms;
+}
+
+.anim-0 {
+  transform-origin: bottom;
+  animation: menu-items ease-in-out 1000ms;
+  animation-fill-mode: both;
+  animation-delay: 250ms;
+}
+
+.anim-1 {
+  transform-origin: bottom;
+  animation: menu-items ease-in-out 1000ms;
+  animation-fill-mode: both;
+  animation-delay: 450ms;
+}
+
+.anim-2 {
+  transform-origin: bottom;
+  animation: menu-items ease-in-out 1000ms;
+  animation-fill-mode: both;
+  animation-delay: 650ms;
+}
+
 .gradientButton {
   font-size: 1em;
   position: relative;
@@ -307,6 +369,7 @@ p {
   justify-content: space-between;
   align-items: center;
   padding-right: 20px;
+  opacity: 0;
 }
 .menu .menuTitle button {
   display: block;
@@ -398,21 +461,6 @@ p {
 .menuItemFlex:hover .checked i {
   transform: rotate(2turn);
   transition: transform ease-out 1s;
-}
-
-@keyframes apparait {
-  from {
-    transform: translateY(15px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-.one {
-  transform-origin: bottom;
-  animation: apparait ease-in-out 1s;
 }
 
 /*# sourceMappingURL=styles.css.map */
