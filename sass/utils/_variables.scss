@@ -1,9 +1,17 @@
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-third: #99E2D0;
-$bkg-dark:#EEEEEE;
-$bkg-light:#F8F8F8;
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-third: #99e2d0;
+$bkg-dark:#eeeeee;
+$bkg-light:#f8f8f8;
 
+//Shadow-color
+$color-shadow:grey;
+
+//Gradient
+$gradient:linear-gradient($color-secondary, $color-primary);
+
+// big button color
+$color-big_button:#{$gradient};
 //Favorite_heart
 $heart-speed: 0.3s;
-$heart-color: linear-gradient(-110deg,$color-primary, $color-secondary);
+$heart-color: linear-gradient(to bottom right,$color-primary, $color-secondary);
