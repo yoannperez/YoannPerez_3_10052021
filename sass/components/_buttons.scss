@@ -1,9 +1,11 @@
 @import "../utils/mixins";
 
+
 .gradientButton {
+  font-size: 1em;
   position: relative;
   display: inline;
-  padding: 20px;
+  padding: rem(20);
   margin: 0 auto;
   background: $color-big_button;
   border-radius: 50px;
@@ -24,7 +26,7 @@
     border-radius: 50px;
     opacity: 0;
     z-index: -1;
-    transition: opacity ease-in-out 250ms;
+    transition: opacity ease-in-out 50ms;
 
   }
   &:hover {

@@ -3,8 +3,10 @@
 
 // Parts 
 @import "./base/base";
+@import "./utils/fonctions";
 @import "./base/typography";
 @import "./utils/variables";
+
 @import "./components/buttons";
 @import "./utils/mixins";
 @import "./layout/header";

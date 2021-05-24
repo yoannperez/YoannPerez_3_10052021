@@ -41,9 +41,10 @@ p {
 }
 
 .gradientButton {
+  font-size: 1em;
   position: relative;
   display: inline;
-  padding: 20px;
+  padding: 1.25rem;
   margin: 0 auto;
   background: linear-gradient(#ff79da, #9356dc);
   border-radius: 50px;
@@ -65,7 +66,7 @@ p {
   border-radius: 50px;
   opacity: 0;
   z-index: -1;
-  transition: opacity ease-in-out 250ms;
+  transition: opacity ease-in-out 50ms;
 }
 .gradientButton:hover {
   box-shadow: 0px 0px 15px #4d4d4d;
@@ -219,8 +220,6 @@ ul.list li a .__container i {
 }
 .blocRestaurant__img {
   position: relative;
-  height: 175px;
-  overflow: hidden;
 }
 .blocRestaurant__img p {
   position: absolute;
