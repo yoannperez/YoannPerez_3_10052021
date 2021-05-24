@@ -97,19 +97,3 @@
     }
   }
 }
-@keyframes apparait{
-  from {
-    transform:translateY(15px);
-    opacity: 0;
-  }
-  to {
-    transform:translateY(0px);
-    opacity: 1;
-  }
-}
-.one {
-  
-  transform-origin: bottom;
-  animation: apparait ease-in-out 1s ;
-  
-}
