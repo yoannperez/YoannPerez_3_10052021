@@ -46,6 +46,7 @@ p {
   display: inline;
   padding: 1.25rem;
   margin: 0 auto;
+  text-shadow: 0 0 1px black;
   background: linear-gradient(#ff79da, #9356dc);
   border-radius: 50px;
   color: white;
@@ -398,6 +399,21 @@ ul.list li a .__container i {
 .menuItemFlex:hover .checked i {
   transform: rotate(2turn);
   transition: transform ease-out 1s;
+}
+
+@keyframes apparait {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.one {
+  transform-origin: bottom;
+  animation: apparait ease-in-out 1s;
 }
 
 /*# sourceMappingURL=styles.css.map */
