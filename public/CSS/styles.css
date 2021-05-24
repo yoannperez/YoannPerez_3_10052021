@@ -103,30 +103,30 @@ p {
   height: 200px;
 }
 
-ul.list {
+.footer ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  margin-block-start: 0 !important;
-  padding-inline-start: 0px !important;
+  margin: 0;
+  padding: 0;
 }
-ul.list li {
+.footer ul li {
   margin: 5px;
 }
-ul.list li p {
+.footer ul li p {
   color: white;
   margin: 0;
 }
-ul.list li a {
+.footer ul li a {
   text-decoration: none;
   color: white;
 }
-ul.list li a .__container {
+.footer ul li a .__container {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-ul.list li a .__container i {
+.footer ul li a .__container i {
   margin-right: 10px;
 }
 
@@ -366,7 +366,6 @@ ul.list li a .__container i {
   justify-content: flex-start;
   flex: 4;
   padding: 10px 20px;
-  background-color: none;
 }
 .menuItemFlex .description .descPrice {
   display: flex;
