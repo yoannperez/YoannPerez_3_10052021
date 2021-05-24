@@ -42,12 +42,12 @@ p {
 
 @keyframes menu-title {
   from {
+    transform: translateY(15px);
     opacity: 0;
-    transform: scale(0, 1);
   }
   to {
-    opacity: 1;
     transform: scale(1, 1);
+    opacity: 0.9;
   }
 }
 @keyframes menu-items {
@@ -61,45 +61,78 @@ p {
   }
 }
 .titleAnim-0 {
-  transform-origin: left;
-  animation: menu-title ease-in-out 500ms;
+  transform-origin: bottom;
+  animation: menu-items ease 1000ms;
   animation-fill-mode: both;
   animation-delay: 0ms;
 }
+.titleAnim-0_Anim-0 {
+  transform-origin: bottom;
+  animation: menu-items ease-in-out 1000ms;
+  animation-fill-mode: both;
+  animation-delay: 500ms;
+}
+.titleAnim-0_Anim-1 {
+  transform-origin: bottom;
+  animation: menu-items ease-in-out 1000ms;
+  animation-fill-mode: both;
+  animation-delay: 700ms;
+}
+.titleAnim-0_Anim-2 {
+  transform-origin: bottom;
+  animation: menu-items ease-in-out 1000ms;
+  animation-fill-mode: both;
+  animation-delay: 900ms;
+}
 
 .titleAnim-1 {
-  transform-origin: left;
-  animation: menu-title ease-in-out 500ms;
+  transform-origin: bottom;
+  animation: menu-items ease 1000ms;
   animation-fill-mode: both;
-  animation-delay: 200ms;
+  animation-delay: 500ms;
+}
+.titleAnim-1_Anim-0 {
+  transform-origin: bottom;
+  animation: menu-items ease-in-out 1000ms;
+  animation-fill-mode: both;
+  animation-delay: 1000ms;
+}
+.titleAnim-1_Anim-1 {
+  transform-origin: bottom;
+  animation: menu-items ease-in-out 1000ms;
+  animation-fill-mode: both;
+  animation-delay: 1200ms;
+}
+.titleAnim-1_Anim-2 {
+  transform-origin: bottom;
+  animation: menu-items ease-in-out 1000ms;
+  animation-fill-mode: both;
+  animation-delay: 1400ms;
 }
 
 .titleAnim-2 {
-  transform-origin: left;
-  animation: menu-title ease-in-out 500ms;
+  transform-origin: bottom;
+  animation: menu-items ease 1000ms;
   animation-fill-mode: both;
-  animation-delay: 400ms;
+  animation-delay: 1000ms;
 }
-
-.anim-0 {
+.titleAnim-2_Anim-0 {
   transform-origin: bottom;
   animation: menu-items ease-in-out 1000ms;
   animation-fill-mode: both;
-  animation-delay: 250ms;
+  animation-delay: 1500ms;
 }
-
-.anim-1 {
+.titleAnim-2_Anim-1 {
   transform-origin: bottom;
   animation: menu-items ease-in-out 1000ms;
   animation-fill-mode: both;
-  animation-delay: 450ms;
+  animation-delay: 1700ms;
 }
-
-.anim-2 {
+.titleAnim-2_Anim-2 {
   transform-origin: bottom;
   animation: menu-items ease-in-out 1000ms;
   animation-fill-mode: both;
-  animation-delay: 650ms;
+  animation-delay: 1900ms;
 }
 
 .gradientButton {

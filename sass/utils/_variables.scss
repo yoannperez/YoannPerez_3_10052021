@@ -18,7 +18,8 @@ $heart-color: linear-gradient(to bottom right,$color-primary, $color-secondary);
 
 //menu_FadeIn
 //Menu title
-$menu-title-duration: 500ms;
+$menu-title-duration: 1000ms;
+$group-delay:500ms;
 //items
 $fade-duration: 1000ms;
 $fade-delay:200ms

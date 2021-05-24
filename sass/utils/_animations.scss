@@ -1,14 +1,15 @@
 //Menu groups
 @keyframes menu-title{
     from {
+        
+        transform:translateY(15px);
         opacity: 0;
-        transform: scale(0, 1);
         
     }
     to {
-        opacity: 1;
-        transform: scale(1, 1);
         
+        transform: scale(1, 1);
+        opacity: 0.9;
     }
 }
 
@@ -23,19 +24,20 @@
       opacity: 1;
     }
   }
-  @for $i from 0 through 2{
-    .titleAnim-#{$i}{
-    transform-origin: left;
-    animation: menu-title ease-in-out $menu-title-duration ;
-    animation-fill-mode: both;
-    animation-delay: $i*$fade-delay;
-    }
-  }
-  @for $i from 0 through 2{
-    .anim-#{$i}{
+  @for $g from 0 through 2{
+    .titleAnim-#{$g}{
     transform-origin: bottom;
-    animation: menu-items ease-in-out $fade-duration ;
+    animation: menu-items ease $menu-title-duration ;
     animation-fill-mode: both;
-    animation-delay: (($i*$fade-delay) + ($menu-title-duration /2) );
+    animation-delay: $g*$group-delay;
+    @for $i from 0 through 2{
+        &_Anim-#{$i}{
+        transform-origin: bottom;
+        animation: menu-items ease-in-out $fade-duration ;
+        animation-fill-mode: both;
+        animation-delay: (($i*$fade-delay) + ($menu-title-duration /2) + ($g*500));
+        }
+      }
     }
   }
+  
