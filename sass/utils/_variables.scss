@@ -1,25 +1,39 @@
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-third: #99e2d0;
-$bkg-dark:#eeeeee;
-$bkg-light:#f8f8f8;
+$bkg-dark: #eeeeee;
+$bkg-light: #f8f8f8;
 
 //Shadow-color
-$color-shadow:grey;
+$color-shadow: grey;
 
 //Gradient
-$gradient:linear-gradient($color-secondary, $color-primary);
+$gradient: linear-gradient($color-secondary, $color-primary);
 
 // big button color
-$color-big_button:#{$gradient};
+$color-big_button: #{$gradient};
 //Favorite_heart
 $heart-speed: 0.3s;
-$heart-color: linear-gradient(to bottom right,$color-primary, $color-secondary);
+$heart-color: linear-gradient(
+  to bottom right,
+  $color-primary,
+  $color-secondary
+);
 
 //menu_FadeIn
 //Menu title
 $menu-title-duration: 1000ms;
-$group-delay:500ms;
+$group-delay: 500ms;
 //items
 $fade-duration: 1000ms;
-$fade-delay:200ms
+$fade-delay: 200ms;
+
+//Media queries
+$breakpoints: (
+  mobile: 576px,
+  tablets: 992px,
+  computer: 1200px,
+);
+
+
+
