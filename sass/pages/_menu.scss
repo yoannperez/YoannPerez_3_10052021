@@ -19,15 +19,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    i {
-      margin-right: 15px;
-    }
-    
+    padding-right: 20px;
+    @include favorite;
+        
   }
-  .truc{
+  .shopit{
       display: flex;
   }
-  span {
+  h3 span {
     border-bottom: 2px solid $color-third;
   }
 }

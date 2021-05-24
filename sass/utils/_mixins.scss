@@ -1,3 +1,36 @@
 @mixin box-shadows {
-    box-shadow: 0 5px 5px black;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.634);
+}
+
+@mixin favorite{
+    button {
+        display: block;
+        background: none;
+        overflow: hidden;
+        border: none;
+        
+        i {
+          color: black;
+          font-size: 1em;
+          padding: 15px 0;
+          
+        }
+        .animate {
+          background: $heart-color;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          opacity: 0;
+        }
+        &:hover {
+          .animate {
+            opacity: 1;
+            transition: opacity ease-in-out $heart-speed;
+          }
+          .fa-inverse {
+            opacity: 0;
+            transition: opacity ease-out $heart-speed;
+          }
+        }
+      }
 }

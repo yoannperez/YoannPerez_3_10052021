@@ -1,128 +1,130 @@
 .location {
-    height: 50px;
-  
-    &__container {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      p {
-        padding: 5px 20px;
-        font-size: 1.3em;
-      }
+  height: 50px;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    p {
+      padding: 5px 20px;
+      font-size: 1.3em;
     }
   }
-  .reserver {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 20px 20px;
-    height: 290px;
-    text-align: center;
+}
+.reserver {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px 20px;
+  height: 290px;
+  text-align: center;
+  background-color: $bkg-light;
+}
+.fonctionnement {
+  background-color: white;
+  padding: 20px 20px;
+  a {
+    text-decoration: none;
+  }
+}
+.fonctionContainer {
+  display: flex;
+  flex-direction: column;
+  height: 75px;
+  width: 100%;
+
+  &__choice {
     background-color: $bkg-light;
-  }
-  .fonctionnement {
-    background-color: white;
-    padding: 20px 20px;
-    a {
-      text-decoration: none;
-    }
-  }
-  .fonctionContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 75px;
-    width: 100%;
-  
-    &__choice {
-      background-color: $bkg-light;
-      display: flex;
-      flex-direction: row;
-      height: 75px;
-      width: 90%;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      margin: 10px auto;
-      @include box-shadows;
-      border-radius: 20px;
-  
-      .number {
-        position: relative;
-        left: -15px;
-        padding: 5px 10px;
-        background-color: $color-primary;
-        color: white;
-        border-radius: 50px;
-      }
-      i {
-        font-size: 1.5em;
-        color: gray;
-      }
-      p {
-        padding: 0 30px;
-      }
-    }
-  }
-  
-  
-  .restaurants {
-    background-color: $bkg-light;
-    padding: 20px 10px;
-    padding-bottom: 50px;
+    width: 90%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 20px;
-    a {
-      text-decoration: none;
-      color: black;
-      margin: 0;
-    }
-  }
-  .blocRestaurant {
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px auto;
     @include box-shadows;
-    border-radius: 15px;
-    &__img {
+    border-radius: 20px;
+
+    .number {
       position: relative;
-      p{
-          position: absolute;
-          right: 15px;
-          color: #00967C;
-          background-color: #A2E5DA;
-          padding: 5px 15px;
-          border-radius: 3px;
-      }
-      img {
-        border-radius: 15px 15px 0 0;
-        height: 175px;
-        width: 100%;
-        object-position:bottom;
-        object-fit:cover;
-        }
-          
+      left: -15px;
+      padding: 5px 10px;
+      background-color: $color-primary;
+      color: white;
+      border-radius: 50px;
     }
-    &__footer {
-      height: 80px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 10px;
-  
-      &Description {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin: 0;
-        h3, p{
-            margin: 2px;
-            
-        }
-      }
-      &Ico{
-          font-size: 2em;
-          margin-right: 10px;
-      }
+    i {
+      font-size: 1.5em;
+      color: gray;
+    }
+    p {
+      padding: 0 30px;
     }
   }
+}
+
+.restaurants {
+  background-color: $bkg-light;
+  padding: 20px 10px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  a {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+  }
+}
+.blocRestaurant {
+  @include box-shadows;
+  border-radius: 15px;
+  &__img {
+    position: relative;
+    height: 175px;
+    overflow: hidden;
+    p {
+      position: absolute;
+      right: 15px;
+      color: #00967c;
+      background-color: #a2e5da;
+      padding: 5px 15px;
+      border-radius: 3px;
+    }
+    img {
+      border-radius: 15px 15px 0 0;
+      height: 175px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  &__footer {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+
+    &Description {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 0;
+      h3,
+      p {
+        margin: 2px;
+      }
+    }
+    &Ico {
+      width: 2em;
+      font-size: 2em;
+      line-height: 2em;
+      @include favorite;
+    }
+  }
+}

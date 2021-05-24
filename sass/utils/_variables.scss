@@ -3,3 +3,7 @@ $color-secondary: #FF79DA;
 $color-third: #99E2D0;
 $bkg-dark:#EEEEEE;
 $bkg-light:#F8F8F8;
+
+//Favorite_heart
+$heart-speed: 0.3s;
+$heart-color: linear-gradient(-110deg,$color-primary, $color-secondary);
