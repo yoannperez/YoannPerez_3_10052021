@@ -11,7 +11,32 @@ h6 {
 p {
   font-family: "Roboto", sans-serif;
   color: black;
+  letter-spacing: normal;
 }
+
+// Entête emplacement
+.location__container p {
+  margin-top: em(13);
+  margin-bottom: em(13);
+  padding: 0 em(20);
+  font-size: 1.2rem;
+  
+}
+// Section Hero
+h1{
+  font-size: 1.6rem;
+  margin: 0 em(20);
+  margin-bottom: em(7);
+
+}
+.reserver p{
+  font-size: 1.2rem;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: em(25);
+  color: rgba(0, 0, 0, 0.682);
+}
+// Page Menu
 .menu {
   h2 {
     font-family: "Shrikhand", cursive;
@@ -23,3 +48,5 @@ p {
 .footer h2 {
   font-family: "Shrikhand", cursive;
 }
+
+

@@ -2,10 +2,10 @@
 
 
 .gradientButton {
-  font-size: 1em;
+  font-size: 1.1em;
   position: relative;
   display: inline;
-  padding: rem(20);
+  padding: em(13) em(30);
   margin: 0 auto;
   text-shadow: 0 0 1px black;
   background: $color-big_button;

@@ -1,29 +1,22 @@
-.location {
-  height: 50px;
-
-  &__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    p {
-      padding: 5px 20px;
-      font-size: 1.3em;
-    }
-  }
+.location__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .reserver {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  padding: 20px 20px;
-  height: 290px;
+  
+  
+  padding: em(40) em(20) em(60) em(20);
+  
   text-align: center;
   background-color: $bkg-light;
 }
 .fonctionnement {
   background-color: white;
-  padding: 20px 20px;
+  padding: 30px 20px;
   a {
     text-decoration: none;
   }
@@ -31,21 +24,28 @@
 .fonctionContainer {
   display: flex;
   flex-direction: column;
-  height: 75px;
+
+  
   width: 100%;
+  gap: 20px;
+
+  // margin-bottom: rem(25);
 
   &__choice {
     background-color: $bkg-light;
     display: flex;
     flex-direction: row;
     height: 75px;
-    width: 90%;
+    width: 98%;
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin: 10px auto;
-    @include box-shadows;
-    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.209);
+    border-radius: 15px;
 
     .number {
       position: relative;
@@ -57,17 +57,19 @@
     }
     i {
       font-size: 1.5em;
+      text-align: center;
+      width: 20px;
       color: gray;
     }
     p {
-      padding: 0 30px;
+      padding: em(12) 30px;
     }
   }
 }
 
 .restaurants {
   background-color: $bkg-light;
-  padding: 20px 10px;
+  padding: 20px 20px;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -78,8 +80,8 @@
     color: black;
     margin: 0;
   }
-   a:nth-child(3) .blocRestaurant img {
-    object-position: 0 -165px;
+  a:nth-child(3) .blocRestaurant img {
+    object-position: center;
   }
 }
 .blocRestaurant {
@@ -87,7 +89,7 @@
   border-radius: 15px;
   &__img {
     position: relative;
-    // height: 175px;
+    height: 175px;
     // overflow: hidden;
     p {
       position: absolute;
@@ -99,14 +101,14 @@
     }
     img {
       border-radius: 15px 15px 0 0;
-      height: 175px;
+      height: rem(175);
       width: 100%;
       object-fit: cover;
       object-position: bottom;
     }
   }
   &__footer {
-    height: 80px;
+    height: rem(78);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
