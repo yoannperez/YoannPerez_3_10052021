@@ -541,6 +541,7 @@ h1 {
   margin-bottom: 20px;
   box-sizing: border-box;
   height: 70px;
+  max-height: 70px;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.264);
   border-radius: 15px;
@@ -563,19 +564,24 @@ h1 {
 }
 .menuItemFlex .description p {
   line-height: 1.5em;
+  max-height: 40px;
 }
 .menuItemFlex .description .descPrice {
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden;
+  max-height: 40px;
+  flex-wrap: nowrap;
 }
 .menuItemFlex .description .descPrice .desc {
   margin: 0;
+  min-width: 100px;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.5em;
+  max-height: 40px;
+  display: inline-block;
 }
 .menuItemFlex .description .descPrice .desc h2 {
   display: inline-block;
