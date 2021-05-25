@@ -1,0 +1,73 @@
+.splash {
+    position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.292);
+  animation: splash ease-in-out 3s;
+  animation-fill-mode: both;
+  z-index: 99;
+
+  h2 {
+    font-family: "Shrikhand", cursive;
+    font-size: 3em;
+    background: $gradient;
+    padding: em(2);
+    background-clip: text;
+    color: rgb(255, 255, 255);
+  }
+  p {
+    color: white;
+    font-size: 1.2em;
+  }
+}
+@keyframes splash {
+  from {
+    display: flex;
+    background-color: $color-primary;
+    transform: translateY(0);
+  }
+  99% {
+    transform: translateY(0);
+  }
+  to {
+    
+    background-color:$color-secondary;
+    transform: translateY(-9999px);
+  }
+}
+@keyframes loading-background {
+  0% {
+    background: linear-gradient(to right, red, white 0px);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  25% {
+    background: linear-gradient(to right, red, white 50px);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  50% {
+    background: linear-gradient(to right, red, white 100px);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  75% {
+    background: linear-gradient(to right, red, white 450px);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  100% {
+    background: linear-gradient(to right, red 500px, white 100px);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
