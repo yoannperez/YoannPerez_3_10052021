@@ -69,6 +69,8 @@ h1 {
 
 .splash {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -82,7 +84,7 @@ h1 {
 }
 .splash h2 {
   font-family: "Shrikhand", cursive;
-  font-size: 3em;
+  font-size: 6em;
   background: linear-gradient(#ff79da, #9356dc);
   padding: 0.125em;
   background-clip: text;

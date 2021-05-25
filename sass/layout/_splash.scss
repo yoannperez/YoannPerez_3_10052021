@@ -1,7 +1,10 @@
 .splash {
     position: fixed;
+    top: 0;
+    left: 0;
   width: 100vw;
   height: 100vh;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,7 +16,7 @@
 
   h2 {
     font-family: "Shrikhand", cursive;
-    font-size: 3em;
+    font-size: 6em;
     background: $gradient;
     padding: em(2);
     background-clip: text;
