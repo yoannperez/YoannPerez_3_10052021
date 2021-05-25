@@ -50,12 +50,18 @@ margin-right: 2em;
   @include computers{
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
+  }
+  @include tablets-only{
+    margin: em(20) em(40);
   }
 }
 .menuItemFlex {
   padding: 0;
-  width: 99%;
+  width: 100%;
+  @include computers{
+    width: 350px;
+  }
   margin-bottom: 20px;
   box-sizing: border-box;
   height: 70px;
@@ -91,7 +97,6 @@ p{
       
       justify-content: space-between;
       align-items: center;
-      // overflow: hidden;
       max-height: 40px;
       flex-wrap: nowrap;
       

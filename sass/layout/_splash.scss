@@ -10,13 +10,16 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(128, 128, 128, 0.292);
-  animation: splash ease-in-out 0s;
+  animation: splash ease-in-out 3s;
   animation-fill-mode: both;
   z-index: 99;
 
   h2 {
     font-family: "Shrikhand", cursive;
-    font-size: 6em;
+    font-size: 3.5em;
+    @include computers {
+      font-size: 6em;
+    }
     background: $gradient;
     padding: em(2);
     background-clip: text;
@@ -30,7 +33,7 @@
 @keyframes splash {
   from {
     display: flex;
-    background-color: $color-primary;
+    background-color: darken($color: $color-primary, $amount: 10) ;
     transform: translateY(0);
   }
   99% {
@@ -38,7 +41,7 @@
   }
   to {
     
-    background-color:$color-secondary;
+    background-color: darken($color: $color-secondary, $amount: 10);
     transform: translateY(-9999px);
   }
 }
