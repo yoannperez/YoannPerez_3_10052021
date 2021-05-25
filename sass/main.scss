@@ -2,13 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
 // Parts 
+@import "./utils/variables";
+@import "./utils/mixins";
 @import "./base/base";
 @import "./utils/fonctions";
 @import "./base/typography";
-@import "./utils/variables";
+
 @import "./utils/animations";
 @import "./components/buttons";
-@import "./utils/mixins";
+
 @import "./layout/header";
 @import "./layout/footer";
 @import "./pages/home";

@@ -21,14 +21,27 @@
     text-decoration: none;
   }
 }
+.fonctionnementFlex{
+  display: flex;
+  flex-direction: column;
+  @include tablets-only {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  @include computers {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  
+}
 .fonctionContainer {
   display: flex;
   flex-direction: column;
-
-  
   width: 100%;
   gap: 20px;
-
+  
   // margin-bottom: rem(25);
 
   &__choice {
@@ -71,10 +84,18 @@
   background-color: $bkg-light;
   padding: 20px 20px;
   padding-bottom: 50px;
+  
+}
+.restaurantsFlex{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 20px;
+  @include computers {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
   a {
     text-decoration: none;
     color: black;
@@ -105,6 +126,9 @@
       width: 100%;
       object-fit: cover;
       object-position: bottom;
+      @include tablets-only {
+        object-position: center;
+      }
     }
   }
   &__footer {

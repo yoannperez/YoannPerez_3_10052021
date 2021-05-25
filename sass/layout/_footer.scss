@@ -3,6 +3,9 @@
   color: white;
   padding: 20px;
   height: 200px;
+  @include tablets-only{
+    text-align: center;
+  }
 }
 .footer ul {
   list-style-type: none;
@@ -11,8 +14,10 @@
   margin: 0;
   padding: 0;
   
+  
   li {
     margin: 5px;
+    
     p {
       color: white;
       margin: 0;
@@ -21,9 +26,13 @@
       text-decoration: none;
       color: white;
       .__container {
+        
         display: flex;
         flex-direction: row;
         align-items: center;
+        @include tablets-only{
+          justify-content: center;
+        }
         i {
           margin-right: 10px;
         }

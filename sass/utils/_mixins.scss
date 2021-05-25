@@ -40,18 +40,14 @@
 
 //Media queries
 
-@mixin mobile-only {
-  @media screen and (max-width: map-get($breakpoints, mobile)){
-      @content;
-  }
-}
+
 @mixin tablets-only {
-  @media screen and (max-width: map-get($breakpoints, tablets)){
+  @media screen and (min-width: map-get($breakpoints, mobile)){
       @content;
   }
 }
 @mixin computers {
-  @media screen and (max-width: map-get($breakpoints, computer)){
+  @media screen and (min-width: map-get($breakpoints, computer)) {
       @content;
   }
 }
