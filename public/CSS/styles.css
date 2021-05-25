@@ -78,7 +78,7 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: rgba(128, 128, 128, 0.292);
-  animation: splash ease-in-out 3s;
+  animation: splash ease-in-out 0s;
   animation-fill-mode: both;
   z-index: 99;
 }
@@ -491,34 +491,29 @@ h1 {
 .blocRestaurant__footerDescription p {
   margin: 2px;
 }
-.blocRestaurant__footerIco {
-  width: 2em;
-  font-size: 2em;
-  line-height: 2em;
-}
-.blocRestaurant__footerIco button {
+.blocRestaurant__footerIco .button {
   display: block;
   background: none;
   overflow: hidden;
   border: none;
 }
-.blocRestaurant__footerIco button i {
+.blocRestaurant__footerIco .button i {
   color: black;
   font-size: 1em;
   padding: 15px 0;
 }
-.blocRestaurant__footerIco button .animate {
+.blocRestaurant__footerIco .button .animate {
   background: linear-gradient(to bottom right, #9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
 }
-.blocRestaurant__footerIco button:hover .animate {
+.blocRestaurant__footerIco .button:hover .animate {
   opacity: 1;
   transition: opacity ease-in-out 0.3s;
 }
-.blocRestaurant__footerIco button:hover .fa-inverse {
+.blocRestaurant__footerIco .button:hover .fa-inverse {
   opacity: 0;
   transition: opacity ease-out 0.3s;
 }
@@ -563,29 +558,29 @@ h1 {
   padding-right: 20px;
   opacity: 1;
 }
-.menu .menuTitle button {
+.menu .menuTitle .button {
   display: block;
   background: none;
   overflow: hidden;
   border: none;
 }
-.menu .menuTitle button i {
+.menu .menuTitle .button i {
   color: black;
   font-size: 1em;
   padding: 15px 0;
 }
-.menu .menuTitle button .animate {
+.menu .menuTitle .button .animate {
   background: linear-gradient(to bottom right, #9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
 }
-.menu .menuTitle button:hover .animate {
+.menu .menuTitle .button:hover .animate {
   opacity: 1;
   transition: opacity ease-in-out 0.3s;
 }
-.menu .menuTitle button:hover .fa-inverse {
+.menu .menuTitle .button:hover .fa-inverse {
   opacity: 0;
   transition: opacity ease-out 0.3s;
 }
