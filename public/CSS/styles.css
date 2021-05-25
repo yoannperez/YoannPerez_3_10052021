@@ -644,16 +644,14 @@ h1 {
   flex-wrap: nowrap;
 }
 .menuItemFlex .description .descPrice .desc {
+  display: inline;
   margin: 0;
   min-width: 100px;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.5em;
   max-height: 40px;
-  display: inline-block;
-}
-.menuItemFlex .description .descPrice .desc h2 {
-  display: inline-block;
+  white-space: nowrap;
 }
 .menuItemFlex .checked {
   background-color: #99e2d0;

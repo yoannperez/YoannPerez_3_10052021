@@ -96,17 +96,15 @@ p{
       flex-wrap: nowrap;
       
       .desc{
-        // background-color: blueviolet;
+        display: inline;
         margin: 0;
         min-width: 100px;
         overflow: hidden;
         text-overflow: ellipsis;
         line-height: 1.5em;
         max-height: 40px;
-        display: inline-block;
-        h2 {
-          display: inline-block;
-        }
+        white-space: nowrap;
+       
       }
     }
   }
