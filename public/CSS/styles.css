@@ -85,7 +85,6 @@ h1 {
 .splash h2 {
   font-family: "Shrikhand", cursive;
   font-size: 3.5em;
-  background: linear-gradient(#ff79da, #9356dc);
   padding: 0.125em;
   background-clip: text;
   color: white;
@@ -514,6 +513,9 @@ h1 {
   -webkit-text-fill-color: transparent;
   opacity: 0;
 }
+.blocRestaurant__footerIco .button:hover {
+  cursor: pointer;
+}
 .blocRestaurant__footerIco .button:hover .animate {
   opacity: 1;
   transition: opacity ease-in-out 0.3s;
@@ -580,6 +582,9 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
+}
+.menu .menuTitle .button:hover {
+  cursor: pointer;
 }
 .menu .menuTitle .button:hover .animate {
   opacity: 1;

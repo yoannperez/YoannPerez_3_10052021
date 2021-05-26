@@ -1,10 +1,7 @@
 @mixin box-shadows {
-    
     box-shadow: 0 0px 10px $color-shadow;
-    
-
 }
-
+// Icone favoris
 @mixin favorite{
     .button {
         display: block;
@@ -26,6 +23,7 @@
           opacity: 0;
         }
         &:hover {
+          cursor: pointer;
           .animate {
             opacity: 1;
             transition: opacity ease-in-out $heart-speed;
