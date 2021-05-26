@@ -273,7 +273,7 @@ h1 {
 .gradientButton:hover {
   cursor: pointer;
   box-shadow: 0px 0px 15px #1a1a1a;
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 .gradientButton:hover::after {
   opacity: 1;
