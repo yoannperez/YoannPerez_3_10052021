@@ -4,9 +4,13 @@
     width: 100%;
     object-position: bottom;
     object-fit: cover;
+    @include tablets-only{
+      height: 400px;
+    }
     @include computers{
       object-position: top;
       object-fit:cover;
+      height: 400px;
     }
   }
 }
@@ -126,6 +130,7 @@ p{
     }
   }
   &:hover {
+    cursor: pointer;
     .description {
       transition: flex 1000ms;
     }

@@ -534,10 +534,16 @@ h1 {
   object-position: bottom;
   object-fit: cover;
 }
+@media screen and (min-width: 576px) {
+  .menu-img img {
+    height: 400px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .menu-img img {
     object-position: top;
     object-fit: cover;
+    height: 400px;
   }
 }
 
@@ -686,6 +692,9 @@ h1 {
 }
 .menuItemFlex .checked i {
   padding: 20px 20px;
+}
+.menuItemFlex:hover {
+  cursor: pointer;
 }
 .menuItemFlex:hover .description {
   transition: flex 1000ms;
