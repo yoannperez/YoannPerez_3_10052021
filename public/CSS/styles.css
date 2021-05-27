@@ -449,9 +449,6 @@ h1 {
   color: black;
   margin: 0;
 }
-.restaurantsFlex a:nth-child(3) .blocRestaurant img {
-  object-position: center;
-}
 
 .blocRestaurant {
   box-shadow: 0 0px 10px grey;

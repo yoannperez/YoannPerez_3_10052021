@@ -98,9 +98,9 @@
     color: black;
     margin: 0;
   }
-  a:nth-child(3) .blocRestaurant img {
-    object-position: center;
-  }
+  // a:nth-child(3) .blocRestaurant img {
+  //   object-position: center;
+  // }
 }
 .blocRestaurant {
   @include box-shadows;
