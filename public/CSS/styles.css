@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 html,
 body {
   height: 100%;
@@ -77,10 +77,29 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(128, 128, 128, 0.292);
-  animation: splash ease-in-out 3s;
-  animation-fill-mode: both;
+  background-color: #9356dc;
   z-index: 99;
+}
+.splash::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ff79da;
+  z-index: 99;
+  animation: background-shift ease-in-out 3s;
+}
+.splash .image {
+  width: 300px;
+  height: 50px;
+  -webkit-mask: url(../../public/Images/ohmyfood@2x.svg) no-repeat 50% 50%;
+  mask: url(../../public/Images/ohmyfood@2x.svg) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+  z-index: 100;
 }
 .splash h2 {
   font-family: "Shrikhand", cursive;
@@ -101,48 +120,21 @@ h1 {
 
 @keyframes splash {
   from {
-    display: flex;
-    background-color: #782cd3;
     transform: translateY(0);
   }
   99% {
     transform: translateY(0);
   }
   to {
-    background-color: #ff46cc;
     transform: translateY(-9999px);
   }
 }
-@keyframes loading-background {
-  0% {
-    background: linear-gradient(to right, red, white 0px);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+@keyframes background-shift {
+  from {
+    opacity: 0;
   }
-  25% {
-    background: linear-gradient(to right, red, white 50px);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  50% {
-    background: linear-gradient(to right, red, white 100px);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  75% {
-    background: linear-gradient(to right, red, white 450px);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  100% {
-    background: linear-gradient(to right, red 500px, white 100px);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+  to {
+    opacity: 1;
   }
 }
 @keyframes menu-title {
@@ -253,7 +245,6 @@ h1 {
   border: none;
   box-shadow: 0 0px 10px grey;
   text-align: center;
-  z-index: 1;
   transform: scale(1);
   outline: -webkit-focus-ring-color auto 0px;
 }

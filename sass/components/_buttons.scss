@@ -12,7 +12,6 @@
   border: none;
   @include box-shadows;
   text-align: center;
-  z-index: 1;
   transform: scale(1);
   outline: -webkit-focus-ring-color auto 0px;
   &::after {

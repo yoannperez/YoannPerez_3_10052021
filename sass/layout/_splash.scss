@@ -1,29 +1,50 @@
 .splash {
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(128, 128, 128, 0.292);
-  animation: splash ease-in-out 3s;
-  animation-fill-mode: both;
-  z-index: 99;
+  background-color: $color-primary;
 
+  
+  z-index: 99;
+  &::after{
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: $color-secondary;
+    z-index: 99;
+    animation: background-shift ease-in-out 3s;
+  }
+  
+.image{
+  width: 300px;
+  height: 50px;
+  -webkit-mask: url(../../public/Images/ohmyfood@2x.svg) no-repeat 50% 50%;
+  mask: url(../../public/Images/ohmyfood@2x.svg) no-repeat 50% 50%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+  z-index: 100;
+
+}
   h2 {
     font-family: "Shrikhand", cursive;
     font-size: 3.5em;
     @include computers {
       font-size: 6em;
     }
-    //background: $gradient;
     padding: em(2);
     background-clip: text;
     color: rgb(255, 255, 255);
+    
   }
   p {
     color: white;
@@ -32,48 +53,22 @@
 }
 @keyframes splash {
   from {
-    display: flex;
-    background-color: darken($color: $color-primary, $amount: 10) ;
+    // display: flex;
     transform: translateY(0);
   }
   99% {
     transform: translateY(0);
   }
   to {
-    
-    background-color: darken($color: $color-secondary, $amount: 10);
     transform: translateY(-9999px);
   }
 }
-@keyframes loading-background {
-  0% {
-    background: linear-gradient(to right, red, white 0px);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+@keyframes background-shift {
+  from {
+    // display: flex;
+    opacity:0;
   }
-  25% {
-    background: linear-gradient(to right, red, white 50px);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  50% {
-    background: linear-gradient(to right, red, white 100px);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  75% {
-    background: linear-gradient(to right, red, white 450px);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  100% {
-    background: linear-gradient(to right, red 500px, white 100px);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+  to {
+    opacity:1;
   }
 }
