@@ -24,6 +24,8 @@
   }
 
   .image {
+    margin-top: 10%;
+    margin-bottom: 10%;
     width: 300px;
     height: 50px;
     -webkit-mask: url(../../public/Images/ohmyfood@2x.svg) no-repeat 50% 50%;
@@ -36,7 +38,9 @@
 
   p {
     color: white;
-    font-size: 1.2em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 2em;
     z-index: 12;
   }
 }
@@ -57,5 +61,43 @@
   }
   to {
     opacity: 1;
+  }
+}
+// Spinner //
+$cd-bars: #15dea5;
+$anim-dur: 2000ms;
+$num-bars: 4;
+$anim-delay: 100ms;
+$size: 8px;
+
+.spinner {
+  z-index: 12;
+  width: $size * 5;
+  height: $size * 6;
+  display: flex;
+  justify-content: center;
+  gap:5px;
+  &__bar {
+    background-color: rgba(255, 255, 255, 0.805);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.483);
+    margin:0;
+    height: 100%;
+    border-radius: 5px;
+    width: $size;
+    animation: bars $anim-dur ease-in-out backwards infinite alternate;
+    @for $i from 1 through $num-bars {
+      &--#{$i} {
+        animation-delay: $anim-delay * $i;
+      }
+    }
+  }
+}
+
+@keyframes bars {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
   }
 }

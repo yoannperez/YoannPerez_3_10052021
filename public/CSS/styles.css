@@ -93,6 +93,8 @@ h1 {
   animation: background-shift ease-in-out 3s;
 }
 .splash .image {
+  margin-top: 10%;
+  margin-bottom: 10%;
   width: 300px;
   height: 50px;
   -webkit-mask: url(../../public/Images/ohmyfood@2x.svg) no-repeat 50% 50%;
@@ -104,7 +106,9 @@ h1 {
 }
 .splash p {
   color: white;
-  font-size: 1.2em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 2em;
   z-index: 12;
 }
 
@@ -125,6 +129,44 @@ h1 {
   }
   to {
     opacity: 1;
+  }
+}
+.spinner {
+  z-index: 12;
+  width: 40px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.spinner__bar {
+  background-color: rgba(255, 255, 255, 0.805);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.483);
+  margin: 0;
+  height: 100%;
+  border-radius: 5px;
+  width: 8px;
+  animation: bars 2000ms ease-in-out backwards infinite alternate;
+}
+.spinner__bar--1 {
+  animation-delay: 100ms;
+}
+.spinner__bar--2 {
+  animation-delay: 200ms;
+}
+.spinner__bar--3 {
+  animation-delay: 300ms;
+}
+.spinner__bar--4 {
+  animation-delay: 400ms;
+}
+
+@keyframes bars {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
   }
 }
 @keyframes menu-title {
