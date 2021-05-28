@@ -9,51 +9,39 @@
   justify-content: center;
   align-items: center;
   background-color: $color-primary;
-
-  
-  z-index: 99;
-  &::after{
+  animation: splash ease-in-out 3s both;
+  z-index: 10;
+  &::after {
     content: "";
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
     background-color: $color-secondary;
-    z-index: 99;
+    z-index: 11;
     animation: background-shift ease-in-out 3s;
   }
-  
-.image{
-  width: 300px;
-  height: 50px;
-  -webkit-mask: url(../../public/Images/ohmyfood@2x.svg) no-repeat 50% 50%;
-  mask: url(../../public/Images/ohmyfood@2x.svg) no-repeat 50% 50%;
-  -webkit-mask-size: cover;
-  mask-size: cover;
-  background-color: white;
-  z-index: 100;
 
-}
-  h2 {
-    font-family: "Shrikhand", cursive;
-    font-size: 3.5em;
-    @include computers {
-      font-size: 6em;
-    }
-    padding: em(2);
-    background-clip: text;
-    color: rgb(255, 255, 255);
-    
+  .image {
+    width: 300px;
+    height: 50px;
+    -webkit-mask: url(../../public/Images/ohmyfood@2x.svg) no-repeat 50% 50%;
+    mask: url(../../public/Images/ohmyfood@2x.svg) no-repeat 50% 50%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: white;
+    z-index: 12;
   }
+
   p {
     color: white;
     font-size: 1.2em;
+    z-index: 12;
   }
 }
 @keyframes splash {
   from {
-    // display: flex;
     transform: translateY(0);
   }
   99% {
@@ -65,10 +53,9 @@
 }
 @keyframes background-shift {
   from {
-    // display: flex;
-    opacity:0;
+    opacity: 0;
   }
   to {
-    opacity:1;
+    opacity: 1;
   }
 }
