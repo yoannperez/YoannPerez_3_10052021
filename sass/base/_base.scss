@@ -10,7 +10,6 @@ body {
 body {
   width: 100%;
   margin: 0 auto;
-  min-width: 240px;
   // max-width: 500px;
   @include computers {
     max-width: 1440px;

@@ -2,8 +2,11 @@
   position: fixed;
   top: 0;
   left: 0;
+  right:0;
+  bottom: 0;
   width: 100vw;
   height: 100vh;
+  padding-top: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,6 +14,8 @@
   background-color: $color-primary;
   animation: splash ease-in-out 3s both;
   z-index: 10;
+  
+  //Background color transition
   &::after {
     content: "";
     position: absolute;
@@ -24,24 +29,48 @@
   }
 
   .image {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    width: 300px;
-    height: 50px;
+    width:80%;
+    height: 80px;
+    // padding:20px;
     -webkit-mask: url(../../public/Images/ohmyfood@2x.svg) no-repeat 50% 50%;
     mask: url(../../public/Images/ohmyfood@2x.svg) no-repeat 50% 50%;
-    -webkit-mask-size: cover;
-    mask-size: cover;
+    -webkit-mask-size: contain;
+    mask-size: contain;
     background-color: white;
     z-index: 12;
+    
   }
 
   p {
     color: white;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    font-size: 2em;
+    font-size: 1em;
     z-index: 12;
+    
+  }
+}
+.progress {
+  background: transparent;
+  border: 1px groove $bkg-light;
+  border-radius: 5px;
+  padding: 10 px;
+  width: 70%;
+  max-width: 400px;
+  margin: 20px;
+  
+  // margin: 0 50px;
+  z-index: 12;
+  // padding-bottom: 200px;
+
+
+    &__bar {
+    background: white;
+    border-radius: 10px;
+    height: 5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: progress-bar 3000ms both;
   }
 }
 @keyframes splash {
@@ -63,41 +92,29 @@
     opacity: 1;
   }
 }
-// Spinner //
-$cd-bars: #15dea5;
-$anim-dur: 2000ms;
-$num-bars: 4;
-$anim-delay: 100ms;
-$size: 8px;
-
-.spinner {
-  z-index: 12;
-  width: $size * 5;
-  height: $size * 6;
-  display: flex;
-  justify-content: center;
-  gap:5px;
-  &__bar {
-    background-color: rgba(255, 255, 255, 0.805);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.483);
-    margin:0;
-    height: 100%;
-    border-radius: 5px;
-    width: $size;
-    animation: bars $anim-dur ease-in-out backwards infinite alternate;
-    @for $i from 1 through $num-bars {
-      &--#{$i} {
-        animation-delay: $anim-delay * $i;
-      }
-    }
-  }
-}
-
-@keyframes bars {
+// Loader //
+@keyframes progress-bar {
   0% {
-    transform: scaleY(0.5);
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  17% {
+    transform: scaleX(0.18);
+  }
+  24% {
+    transform: scaleX(0.4);
+  }
+  46% {
+    transform: scaleX(0.81);
+  }
+  85%,
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
   }
   100% {
-    transform: scaleY(1);
+    transform: scaleX(1);
   }
 }
+
+

@@ -12,7 +12,6 @@ body {
 body {
   width: 100%;
   margin: 0 auto;
-  min-width: 240px;
 }
 @media screen and (min-width: 1200px) {
   body {
@@ -71,8 +70,11 @@ h1 {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100vw;
   height: 100vh;
+  padding-top: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,14 +95,12 @@ h1 {
   animation: background-shift ease-in-out 3s;
 }
 .splash .image {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  width: 300px;
-  height: 50px;
+  width: 80%;
+  height: 80px;
   -webkit-mask: url(../../public/Images/ohmyfood@2x.svg) no-repeat 50% 50%;
   mask: url(../../public/Images/ohmyfood@2x.svg) no-repeat 50% 50%;
-  -webkit-mask-size: cover;
-  mask-size: cover;
+  -webkit-mask-size: contain;
+  mask-size: contain;
   background-color: white;
   z-index: 12;
 }
@@ -108,8 +108,27 @@ h1 {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 2em;
+  font-size: 1em;
   z-index: 12;
+}
+
+.progress {
+  background: transparent;
+  border: 1px groove #f8f8f8;
+  border-radius: 5px;
+  padding: 10 px;
+  width: 70%;
+  max-width: 400px;
+  margin: 20px;
+  z-index: 12;
+}
+.progress__bar {
+  background: white;
+  border-radius: 10px;
+  height: 5px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: progress-bar 3000ms both;
 }
 
 @keyframes splash {
@@ -131,42 +150,26 @@ h1 {
     opacity: 1;
   }
 }
-.spinner {
-  z-index: 12;
-  width: 40px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-}
-.spinner__bar {
-  background-color: rgba(255, 255, 255, 0.805);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.483);
-  margin: 0;
-  height: 100%;
-  border-radius: 5px;
-  width: 8px;
-  animation: bars 2000ms ease-in-out backwards infinite alternate;
-}
-.spinner__bar--1 {
-  animation-delay: 100ms;
-}
-.spinner__bar--2 {
-  animation-delay: 200ms;
-}
-.spinner__bar--3 {
-  animation-delay: 300ms;
-}
-.spinner__bar--4 {
-  animation-delay: 400ms;
-}
-
-@keyframes bars {
+@keyframes progress-bar {
   0% {
-    transform: scaleY(0.5);
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  17% {
+    transform: scaleX(0.18);
+  }
+  24% {
+    transform: scaleX(0.4);
+  }
+  46% {
+    transform: scaleX(0.81);
+  }
+  85%, 100% {
+    opacity: 1;
+    transform: scaleX(1);
   }
   100% {
-    transform: scaleY(1);
+    transform: scaleX(1);
   }
 }
 @keyframes menu-title {
