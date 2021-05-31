@@ -126,7 +126,7 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: #9356dc;
-  animation: splash ease-in-out 2500ms both;
+  animation: splash ease-in-out 0ms both;
   z-index: 10;
 }
 .splash::after {
@@ -138,7 +138,7 @@ h1 {
   bottom: 0;
   background-color: #ff79da;
   z-index: 11;
-  animation: background-shift ease-in-out 2500ms;
+  animation: background-shift ease-in-out 0ms;
 }
 .splash .image {
   width: 80%;
@@ -173,7 +173,7 @@ h1 {
   height: 5px;
   transform: scaleX(0);
   transform-origin: left;
-  animation: progress-bar 2500ms both;
+  animation: progress-bar 0ms both;
 }
 
 @keyframes menu-title {
@@ -220,6 +220,12 @@ h1 {
   animation-fill-mode: both;
   animation-delay: 900ms;
 }
+.titleAnim-0_Anim-3 {
+  transform-origin: bottom;
+  animation: menu-items ease-in-out 1000ms;
+  animation-fill-mode: both;
+  animation-delay: 1100ms;
+}
 
 .titleAnim-1 {
   transform-origin: bottom;
@@ -245,6 +251,12 @@ h1 {
   animation-fill-mode: both;
   animation-delay: 1400ms;
 }
+.titleAnim-1_Anim-3 {
+  transform-origin: bottom;
+  animation: menu-items ease-in-out 1000ms;
+  animation-fill-mode: both;
+  animation-delay: 1600ms;
+}
 
 .titleAnim-2 {
   transform-origin: bottom;
@@ -269,6 +281,12 @@ h1 {
   animation: menu-items ease-in-out 1000ms;
   animation-fill-mode: both;
   animation-delay: 1900ms;
+}
+.titleAnim-2_Anim-3 {
+  transform-origin: bottom;
+  animation: menu-items ease-in-out 1000ms;
+  animation-fill-mode: both;
+  animation-delay: 2100ms;
 }
 
 .gradientButton {

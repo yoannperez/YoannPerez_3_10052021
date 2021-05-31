@@ -30,7 +30,7 @@
     animation: menu-items ease $menu-title-duration ;
     animation-fill-mode: both;
     animation-delay: $g*$group-delay;
-    @for $i from 0 through 2{
+    @for $i from 0 through 3{
         &_Anim-#{$i}{
         transform-origin: bottom;
         animation: menu-items ease-in-out $fade-duration ;
