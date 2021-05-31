@@ -5,12 +5,12 @@
     width: 100%;
     object-position: bottom;
     object-fit: cover;
-    @include tablets-only{
+    @include tablets-only {
       height: 400px;
     }
-    @include computers{
+    @include computers {
       object-position: top;
-      object-fit:cover;
+      object-fit: cover;
       height: 300px;
     }
   }
@@ -18,31 +18,31 @@
 // Menu Section
 .menu {
   position: relative;
-  padding: 30px 15px;
+  padding: 10px 15px;
   background-color: $bkg-dark;
-  border-radius: 30px 30px 0 0;
-  margin-top: -30px;
+  border-radius: 35px 35px 0 0;
+  margin-top: -35px;
   z-index: 1;
-  @include computers{
-margin-left: 2em;
-margin-right: 2em;
-  }
-  @include tablets-only{
+  @include computers {
     margin-left: 2em;
     margin-right: 2em;
-      }
- 
-//Nom du menu
+  }
+  @include tablets-only {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  //Nom du menu
   .menuTitle {
     display: flex;
     justify-content: space-between;
     align-items: center;
     @include favorite;
     opacity: 1;
-    @include tablets-only{
+    @include tablets-only {
       margin: em(20) em(40);
     }
-    @include computers{
+    @include computers {
       margin: em(20) em(40);
     }
   }
@@ -51,19 +51,20 @@ margin-right: 2em;
     display: flex;
   }
   h3 span {
-    border-bottom: 2px solid $color-third;
+    border-bottom: 3px solid $color-third;
+    padding-bottom: 5px;
   }
 }
 // Conteneur Flex Global
-.menuFlex{
+.menuFlex {
   display: flex;
   flex-direction: column;
-  @include computers{
+  @include computers {
     flex-direction: row;
     justify-content: center;
     gap: 30px;
   }
-  @include tablets-only{
+  @include tablets-only {
     margin: em(20) em(40);
   }
 }
@@ -71,7 +72,7 @@ margin-right: 2em;
 .menuItemFlex {
   padding: 0;
   width: 100%;
-  @include computers{
+  @include computers {
     width: 350px;
   }
   margin-bottom: 20px;
@@ -86,10 +87,10 @@ margin-right: 2em;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  p{
+  p {
     margin: 5px 0;
   }
-// Partie basse de l'item
+  // Partie basse de l'item
   .description {
     display: flex;
     flex-direction: column;
@@ -97,16 +98,16 @@ margin-right: 2em;
     flex: 4;
     padding: 10px 20px;
     overflow: hidden;
-    
+
     .descPrice {
       height: 100%;
       display: flex;
-      
+
       justify-content: space-between;
       align-items: center;
       flex-wrap: nowrap;
-      
-      .desc{
+
+      .desc {
         display: inline;
         margin: 0;
         min-width: 100px;

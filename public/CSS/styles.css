@@ -57,9 +57,13 @@ h1 {
 
 .menu h2 {
   font-family: "Shrikhand", cursive;
+  font-size: 1.75em;
 }
 .menu h3 {
   text-transform: uppercase;
+  margin: 0.4em 0 1.3em 0.3em;
+  font-size: 1em;
+  font-weight: 300;
 }
 
 .footer h2 {
@@ -305,6 +309,10 @@ h1 {
 }
 .gradientButton:hover::after {
   opacity: 1;
+}
+
+.bigButton--menu {
+  padding: 0.8125em 3.125em;
 }
 
 .header {
@@ -647,10 +655,10 @@ h1 {
 
 .menu {
   position: relative;
-  padding: 30px 15px;
+  padding: 10px 15px;
   background-color: #eeeeee;
-  border-radius: 30px 30px 0 0;
-  margin-top: -30px;
+  border-radius: 35px 35px 0 0;
+  margin-top: -35px;
   z-index: 1;
 }
 @media screen and (min-width: 1200px) {
@@ -718,7 +726,8 @@ h1 {
   display: flex;
 }
 .menu h3 span {
-  border-bottom: 2px solid #99e2d0;
+  border-bottom: 3px solid #99e2d0;
+  padding-bottom: 5px;
 }
 
 .menuFlex {
