@@ -178,9 +178,6 @@
         margin: 2px;
       }
     }
-    &Ico {
-      @include favorite;
-    }
   }
 }
 .restaurantJaime {
@@ -192,7 +189,7 @@
     display: inline-block;
     position: absolute;
     bottom: 6px;
-    right: 0;
+    right: 5px;
     @include favorite;
   }
 }

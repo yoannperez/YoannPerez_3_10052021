@@ -37,6 +37,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    div.button {
+      padding-top: 5px;
+    }
     @include favorite;
     opacity: 1;
     @include tablets-only {
@@ -71,7 +74,6 @@
 }
 // Item
 .menuItemFlex {
-  
   padding: 0;
   width: 100%;
   @include computers {
@@ -102,7 +104,7 @@
     flex: 4;
     padding: 10px 20px 10px 10px;
     overflow: hidden;
-    
+
     .descPrice {
       height: 100%;
       display: flex;
@@ -136,7 +138,7 @@
       font-size: 1.5em;
       line-height: 2em;
       padding: 10px 18px;
-      }
+    }
   }
   &:hover {
     cursor: pointer;

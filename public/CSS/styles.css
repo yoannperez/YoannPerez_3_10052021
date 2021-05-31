@@ -558,38 +558,6 @@ h1 {
 .blocRestaurant__footerDescription p {
   margin: 2px;
 }
-.blocRestaurant__footerIco .button {
-  display: block;
-  background: none;
-  overflow: hidden;
-  border: none;
-}
-.blocRestaurant__footerIco .button .fa-stack {
-  width: 2em;
-}
-.blocRestaurant__footerIco .button i {
-  color: black;
-  font-size: 1em;
-  padding: 15px 0;
-}
-.blocRestaurant__footerIco .button .animate {
-  background: linear-gradient(to bottom right, #9356dc, #ff79da);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-}
-.blocRestaurant__footerIco .button:hover {
-  cursor: pointer;
-}
-.blocRestaurant__footerIco .button:hover .animate {
-  opacity: 1;
-  transition: opacity ease-in-out 0.3s;
-}
-.blocRestaurant__footerIco .button:hover .fa-inverse {
-  opacity: 0;
-  transition: opacity ease-out 0.3s;
-}
 
 .restaurantJaime {
   position: relative;
@@ -599,7 +567,7 @@ h1 {
   display: inline-block;
   position: absolute;
   bottom: 6px;
-  right: 0;
+  right: 5px;
 }
 .restaurantJaime .jaime .button {
   display: block;
@@ -612,7 +580,7 @@ h1 {
 }
 .restaurantJaime .jaime .button i {
   color: black;
-  font-size: 1em;
+  font-size: 0.8em;
   padding: 15px 0;
 }
 .restaurantJaime .jaime .button .animate {
@@ -679,6 +647,9 @@ h1 {
   align-items: center;
   opacity: 1;
 }
+.menu .menuTitle div.button {
+  padding-top: 5px;
+}
 .menu .menuTitle .button {
   display: block;
   background: none;
@@ -690,7 +661,7 @@ h1 {
 }
 .menu .menuTitle .button i {
   color: black;
-  font-size: 1em;
+  font-size: 0.8em;
   padding: 15px 0;
 }
 .menu .menuTitle .button .animate {
