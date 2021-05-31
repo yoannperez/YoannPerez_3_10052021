@@ -37,16 +37,3 @@
       }
 }
 
-//Media queries
-
-
-@mixin tablets-only {
-  @media screen and (min-width: map-get($breakpoints, mobile)){
-      @content;
-  }
-}
-@mixin computers {
-  @media screen and (min-width: map-get($breakpoints, computer)) {
-      @content;
-  }
-}
