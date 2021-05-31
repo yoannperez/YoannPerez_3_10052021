@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/yoannperez/YoannPerez_3_10052021/issues"
   },
-  "homepage": "https://github.com/yoannperez/YoannPerez_3_10052021#readme"
+  "homepage": "https://github.com/yoannperez/YoannPerez_3_10052021#readme",
+  "dependencies": {
+    "sass": "^1.34.0"
+  }
 }
