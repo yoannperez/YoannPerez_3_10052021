@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Place this data between the <head> tags of your website -->
+    <title>Ohmyfood</title>
+    <meta name="description" content="Découvrez des restaurants d'exception." />
+
+    <!-- Feuille CSS -->
+    <link rel="stylesheet" href="public/CSS/styles.css" />
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/9f2f1bfbc6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="public/Images/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main id="main_wrapper">
+      <!-- <div class="splash">
+        <div class="image"></div>
+        <div class="progress">
+          <div class="progress__bar"></div>
+        </div>
+        <p>Chargement...</p>
+      </div> -->
+
+      <!-- header -->
+      <header class="header">
+        <img
+          src="public/Images/ohmyfood@2x.svg"
+          alt="ohmyfood-logo"
+          class="header__logo"
+        />
+      </header>
+      <!-- Location -->
+
+      <div class="location__container">
+        <span><i class="fas fa-map-marker-alt"></i></span>
+        <p>Paris, Belleville</p>
+      </div>
+      <!-- Section Hero -->
+
+      <section id="hero">
+        <div class="reserver">
+          <h1><strong>Réservez le menu qui vous convient</strong></h1>
+          <p>
+            Découvrez des restaurants d'exception, sélectionnés par nos soins
+          </p>
+          <button class="gradientButton">Explorez nos restaurants</button>
+        </div>
+      </section>
+
+      <!-- Section Fontionnement -->
+      <section>
+        <div class="fonctionnement">
+          <h2>Fonctionnement</h2>
+          <div class="fonctionnementFlex">
+            <a href="#">
+              <div class="fonctionContainer">
+                <div class="fonctionContainer__choice">
+                  <p class="number">1</p>
+                  <i class="fas fa-mobile-alt"></i>
+                  <p><strong>Choisissez un restaurant</strong></p>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="fonctionContainer">
+                <div class="fonctionContainer__choice">
+                  <p class="number">2</p>
+                  <i class="fas fa-list-ul"></i>
+                  <p><strong>Composez votre menu</strong></p>
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="fonctionContainer">
+                <div class="fonctionContainer__choice">
+                  <p class="number">3</p>
+                  <i class="fas fa-store"></i>
+                  <p><strong>Dégustez au restaurant</strong></p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Section Restaurants -->
+      <section>
+        <div class="restaurants">
+          <h2>Restaurants</h2>
+          <div class="restaurantsFlex">
+            <div class="restaurantJaime">
+              <a href="menu/la-palette-du-gout.html">
+                <div class="blocRestaurant">
+                  <div class="blocRestaurant__img">
+                    <p>Nouveau</p>
+                    <img
+                      src="public/Images/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                      alt="Plat gastronomique et corbeille de pain"
+                    />
+                  </div>
+                  <div class="blocRestaurant__footer">
+                    <div class="blocRestaurant__footerDescription">
+                      <h3>La palette du goût</h3>
+                      <p>Ménilmontant</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <div class="jaime">
+                <div class="button">
+                  <span class="fa-stack fa-2x">
+                    <i class="far fa-heart fa-stack-2x fa-inverse"></i>
+                    <i class="fas fa-heart fa-stack-2x animate"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="restaurantJaime">
+              <a href="menu/la-note-enchantee.html">
+                <div class="blocRestaurant">
+                  <div class="blocRestaurant__img">
+                    <p>Nouveau</p>
+                    <img
+                      src="public/Images/stil-u2Lp8tXIcjw-unsplash.jpg"
+                      alt="Noix de coquilles Saint-Jacques "
+                    />
+                  </div>
+                  <div class="blocRestaurant__footer">
+                    <div class="blocRestaurant__footerDescription">
+                      <h3>La note enchantée</h3>
+                      <p>Charonne</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <div class="jaime">
+                <div class="button">
+                  <span class="fa-stack fa-2x">
+                    <i class="far fa-heart fa-stack-2x fa-inverse"></i>
+                    <i class="fas fa-heart fa-stack-2x animate"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="restaurantJaime">
+              <a href="menu/a-la-francaise.html">
+                <div class="blocRestaurant">
+                  <div class="blocRestaurant__img">
+                    <img
+                      src="public/Images/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                      alt="Coquilles Saint-Jacques"
+                    />
+                  </div>
+                  <div class="blocRestaurant__footer">
+                    <div class="blocRestaurant__footerDescription">
+                      <h3>À la française</h3>
+                      <p>Cité Rouge</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <div class="jaime">
+                <div class="button">
+                  <span class="fa-stack fa-2x">
+                    <i class="far fa-heart fa-stack-2x fa-inverse"></i>
+                    <i class="fas fa-heart fa-stack-2x animate"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="restaurantJaime">
+              <a href="menu/le-delice-des-sens.html">
+                <div class="blocRestaurant">
+                  <div class="blocRestaurant__img">
+                    <img
+                      src="public/Images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                      alt="Poulet rôti aux herbes de Provence "
+                    />
+                  </div>
+                  <div class="blocRestaurant__footer">
+                    <div class="blocRestaurant__footerDescription">
+                      <h3>Le délice des sens</h3>
+                      <p>Folie-Méricourt</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <div class="jaime">
+                <div class="button">
+                  <span class="fa-stack fa-2x">
+                    <i class="far fa-heart fa-stack-2x fa-inverse"></i>
+                    <i class="fas fa-heart fa-stack-2x animate"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer-->
+      <footer>
+        <div class="footer">
+          <h2>ohmyfood</h2>
+          <ul class="list">
+            <li>
+              <a href="#">
+                <div class="__container">
+                  <i class="fas fa-utensils"></i>
+                  <p>Proposer un restaurant</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="__container">
+                  <i class="fas fa-hands-helping"></i>
+                  <p>Devenir partenaire</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>Mentions légales</p>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:yoann.perez@gmail.com">
+                <p>Contact</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
