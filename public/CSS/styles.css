@@ -121,7 +121,7 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: #9356dc;
-  animation: splash ease-in-out 3000ms both;
+  animation: splash ease-in-out 0ms both;
   z-index: 10;
 }
 .splash::after {
@@ -133,7 +133,7 @@ h1 {
   bottom: 0;
   background-color: #ff79da;
   z-index: 11;
-  animation: background-shift ease-in-out 3000ms;
+  animation: background-shift ease-in-out 0ms;
 }
 .splash .image {
   width: 80%;
@@ -168,7 +168,7 @@ h1 {
   height: 5px;
   transform: scaleX(0);
   transform-origin: left;
-  animation: progress-bar 3000ms both;
+  animation: progress-bar 0ms both;
 }
 
 @keyframes menu-title {
@@ -550,6 +550,46 @@ h1 {
   transition: opacity ease-in-out 0.3s;
 }
 .blocRestaurant__footerIco .button:hover .fa-inverse {
+  opacity: 0;
+  transition: opacity ease-out 0.3s;
+}
+
+.restaurantJaime {
+  position: relative;
+}
+.restaurantJaime .jaime {
+  width: min-content;
+  display: inline-block;
+  position: absolute;
+  bottom: 6px;
+  right: 0;
+}
+.restaurantJaime .jaime .button {
+  display: block;
+  background: none;
+  overflow: hidden;
+  border: none;
+}
+.restaurantJaime .jaime .button i {
+  color: black;
+  font-size: 1em;
+  padding: 15px 0;
+}
+.restaurantJaime .jaime .button .animate {
+  background: linear-gradient(to bottom right, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+.restaurantJaime .jaime .button:hover {
+  cursor: pointer;
+}
+.restaurantJaime .jaime .button:hover .animate {
+  opacity: 1;
+  transition: opacity ease-in-out 0.3s;
+}
+.restaurantJaime .jaime .button:hover .fa-inverse {
   opacity: 0;
   transition: opacity ease-out 0.3s;
 }

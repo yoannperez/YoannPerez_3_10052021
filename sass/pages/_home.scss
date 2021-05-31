@@ -157,3 +157,17 @@
     }
   }
 }
+.restaurantJaime {
+  position: relative;
+
+//Bouton J'aime
+.jaime {
+ 
+  width: min-content;
+  display: inline-block;
+  position: absolute;
+  bottom: 6px;
+  right: 0;
+  @include favorite;
+}
+}
