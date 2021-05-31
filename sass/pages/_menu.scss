@@ -47,7 +47,7 @@
     }
   }
   .addCart-btn {
-    margin: 40px 0;
+    margin: 38px 0 75px 0;
     display: flex;
   }
   h3 span {
@@ -59,6 +59,7 @@
 .menuFlex {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   @include computers {
     flex-direction: row;
     justify-content: center;
@@ -70,17 +71,18 @@
 }
 // Item
 .menuItemFlex {
+  
   padding: 0;
   width: 100%;
   @include computers {
     width: 350px;
   }
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   box-sizing: border-box;
-  height: 70px;
+  height: 68px;
   max-height: 70px;
   background: white;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.264);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
   line-height: 1.5em;
   display: flex;
@@ -88,7 +90,9 @@
   justify-content: center;
   overflow: hidden;
   p {
-    margin: 5px 0;
+    margin: 0px 0;
+    font-size: 1.1em;
+    font-weight: 100;
   }
   // Partie basse de l'item
   .description {
@@ -96,9 +100,9 @@
     flex-direction: column;
     justify-content: flex-start;
     flex: 4;
-    padding: 10px 20px;
+    padding: 10px 20px 10px 10px;
     overflow: hidden;
-
+    
     .descPrice {
       height: 100%;
       display: flex;
@@ -114,21 +118,25 @@
         overflow: hidden;
         text-overflow: ellipsis;
         line-height: 1.5em;
+        font-size: 0.95em;
         white-space: nowrap;
       }
     }
   }
   // Check green button
   .checked {
+    color: white;
     background-color: $color-third;
     height: max-content;
     width: 0%;
     height: 100%;
     margin: 0 0px;
-    padding: 0 0px;
+    padding: 6px 0px;
     i {
-      padding: 020px 20px;
-    }
+      font-size: 1.5em;
+      line-height: 2em;
+      padding: 10px 18px;
+      }
   }
   &:hover {
     cursor: pointer;
@@ -137,7 +145,7 @@
     }
     .checked {
       transition: all 1000ms;
-      width: calc(2em + 40px);
+      width: calc(1.6em + 35px);
       i {
         transform: rotate(2turn);
         transition: transform ease-out 1s;

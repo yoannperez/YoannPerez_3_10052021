@@ -338,8 +338,8 @@ h1 {
 .footer {
   background-color: #454545;
   color: white;
-  padding: 5px 20px 20px 25px;
-  height: 200px;
+  padding: 5px 20px 0px 25px;
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 576px) {
   .footer {
@@ -722,7 +722,7 @@ h1 {
   }
 }
 .menu .addCart-btn {
-  margin: 40px 0;
+  margin: 38px 0 75px 0;
   display: flex;
 }
 .menu h3 span {
@@ -733,6 +733,7 @@ h1 {
 .menuFlex {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 @media screen and (min-width: 1200px) {
   .menuFlex {
@@ -750,12 +751,12 @@ h1 {
 .menuItemFlex {
   padding: 0;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   box-sizing: border-box;
-  height: 70px;
+  height: 68px;
   max-height: 70px;
   background: white;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.264);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
   line-height: 1.5em;
   display: flex;
@@ -769,14 +770,16 @@ h1 {
   }
 }
 .menuItemFlex p {
-  margin: 5px 0;
+  margin: 0px 0;
+  font-size: 1.1em;
+  font-weight: 100;
 }
 .menuItemFlex .description {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   flex: 4;
-  padding: 10px 20px;
+  padding: 10px 20px 10px 10px;
   overflow: hidden;
 }
 .menuItemFlex .description .descPrice {
@@ -793,18 +796,22 @@ h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.5em;
+  font-size: 0.95em;
   white-space: nowrap;
 }
 .menuItemFlex .checked {
+  color: white;
   background-color: #99e2d0;
   height: max-content;
   width: 0%;
   height: 100%;
   margin: 0 0px;
-  padding: 0 0px;
+  padding: 6px 0px;
 }
 .menuItemFlex .checked i {
-  padding: 20px 20px;
+  font-size: 1.5em;
+  line-height: 2em;
+  padding: 10px 18px;
 }
 .menuItemFlex:hover {
   cursor: pointer;
@@ -814,7 +821,7 @@ h1 {
 }
 .menuItemFlex:hover .checked {
   transition: all 1000ms;
-  width: calc(2em + 40px);
+  width: calc(1.6em + 35px);
 }
 .menuItemFlex:hover .checked i {
   transform: rotate(2turn);
