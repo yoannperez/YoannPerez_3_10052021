@@ -126,7 +126,7 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: #9356dc;
-  animation: splash ease-in-out 0ms both;
+  animation: splash ease-in-out 3000ms both;
   z-index: 10;
 }
 .splash::after {
@@ -138,7 +138,7 @@ h1 {
   bottom: 0;
   background-color: #ff79da;
   z-index: 11;
-  animation: background-shift ease-in-out 0ms;
+  animation: background-shift ease-in-out 3000ms;
 }
 .splash .image {
   width: 80%;
@@ -173,7 +173,7 @@ h1 {
   height: 5px;
   transform: scaleX(0);
   transform-origin: left;
-  animation: progress-bar 0ms both;
+  animation: progress-bar 3000ms both;
 }
 
 @keyframes menu-title {
