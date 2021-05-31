@@ -123,7 +123,8 @@
     color: black;
     margin: 0;
   }
-  a:nth-child(3) .blocRestaurant img {
+  div:nth-child(2) a .blocRestaurant img {
+    
     object-position: center;
   }
 }
@@ -147,7 +148,7 @@
       height: rem(175);
       width: 100%;
       object-fit: cover;
-      object-position: center;
+      object-position: bottom;
       @include tablets-only {
         object-position: center;
       }

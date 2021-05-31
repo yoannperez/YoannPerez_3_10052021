@@ -492,7 +492,7 @@ h1 {
   color: black;
   margin: 0;
 }
-.restaurantsFlex a:nth-child(3) .blocRestaurant img {
+.restaurantsFlex div:nth-child(2) a .blocRestaurant img {
   object-position: center;
 }
 
@@ -517,7 +517,7 @@ h1 {
   height: 10.9375rem;
   width: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: bottom;
 }
 @media screen and (min-width: 576px) {
   .blocRestaurant__img img {
