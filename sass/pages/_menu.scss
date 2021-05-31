@@ -3,7 +3,7 @@
   img {
     height: 250px;
     width: 100%;
-    object-position: bottom;
+    object-position: center;
     object-fit: cover;
     @include tablets-only {
       height: 400px;

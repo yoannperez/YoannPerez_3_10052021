@@ -527,7 +527,7 @@ h1 {
   margin: 0;
 }
 .restaurantsFlex div:nth-child(2) a .blocRestaurant img {
-  object-position: center;
+  object-position: 0px 60%;
 }
 
 .blocRestaurant {
@@ -623,7 +623,7 @@ h1 {
 .menu-img img {
   height: 250px;
   width: 100%;
-  object-position: bottom;
+  object-position: center;
   object-fit: cover;
 }
 @media screen and (min-width: 576px) {
