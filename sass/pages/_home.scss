@@ -138,6 +138,9 @@
 .blocRestaurant {
   @include box-shadows;
   border-radius: 15px;
+  @include computers{
+    min-width: 300px;
+  }
   &__img {
     position: relative;
     height: 175px;
