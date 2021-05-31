@@ -1,15 +1,16 @@
 .gradientButton {
-  font-size: 1.1em;
+  font-size: 1em;
+  line-height: 1.5;
   position: relative;
   display: inline;
-  padding: em(13) em(30);
+  padding: em(13) em(20);
   margin: 0 auto;
   text-shadow: 0 0 1px black;
   background: $color-big_button;
   border-radius: 50px;
   color: white;
   border: none;
-  @include box-shadows;
+  box-shadow: 0 5px 5px rgba($color-shadow, 0.3);
   text-align: center;
   transform: scale(1);
   outline: -webkit-focus-ring-color auto 0px;
@@ -30,7 +31,7 @@
   }
   &:hover {
     cursor:pointer;
-    box-shadow: 0px 0px 15px (darken($color: $color-shadow, $amount: 40));
+    box-shadow: 0 5px 5px rgba($color-shadow, 0.8);
     transform: scale(1.02);
     &::after {
       opacity: 1;
