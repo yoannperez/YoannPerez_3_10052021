@@ -66,71 +66,6 @@ h1 {
   font-family: "Shrikhand", cursive;
 }
 
-.splash {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 100vh;
-  padding-top: 5vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #9356dc;
-  animation: splash ease-in-out 3s both;
-  z-index: 10;
-}
-.splash::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ff79da;
-  z-index: 11;
-  animation: background-shift ease-in-out 3s;
-}
-.splash .image {
-  width: 80%;
-  height: 80px;
-  -webkit-mask: url(../../public/Images/ohmyfood@2x.svg) no-repeat 50% 50%;
-  mask: url(../../public/Images/ohmyfood@2x.svg) no-repeat 50% 50%;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  background-color: white;
-  z-index: 12;
-}
-.splash p {
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1em;
-  z-index: 12;
-}
-
-.progress {
-  background: transparent;
-  border: 1px groove #f8f8f8;
-  border-radius: 5px;
-  padding: 10 px;
-  width: 70%;
-  max-width: 400px;
-  margin: 20px;
-  z-index: 12;
-}
-.progress__bar {
-  background: white;
-  border-radius: 10px;
-  height: 5px;
-  transform: scaleX(0);
-  transform-origin: left;
-  animation: progress-bar 3000ms both;
-}
-
 @keyframes splash {
   from {
     transform: translateY(0);
@@ -172,6 +107,70 @@ h1 {
     transform: scaleX(1);
   }
 }
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356dc;
+  animation: splash ease-in-out 3000ms both;
+  z-index: 10;
+}
+.splash::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ff79da;
+  z-index: 11;
+  animation: background-shift ease-in-out 3000ms;
+}
+.splash .image {
+  width: 80%;
+  height: 80px;
+  -webkit-mask: url(../../public/Images/ohmyfood@2x.svg) no-repeat 50% 50%;
+  mask: url(../../public/Images/ohmyfood@2x.svg) no-repeat 50% 50%;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  background-color: white;
+  z-index: 12;
+}
+.splash p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  z-index: 12;
+}
+
+.progress {
+  background: transparent;
+  border: 1px groove #f8f8f8;
+  border-radius: 5px;
+  width: 70%;
+  max-width: 400px;
+  margin: 20px;
+  z-index: 12;
+}
+.progress__bar {
+  background: white;
+  border-radius: 10px;
+  height: 5px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: progress-bar 3000ms both;
+}
+
 @keyframes menu-title {
   from {
     transform: translateY(15px);
@@ -687,16 +686,11 @@ h1 {
   padding: 10px 20px;
   overflow: hidden;
 }
-.menuItemFlex .description p {
-  line-height: 1.5em;
-  max-height: 40px;
-}
 .menuItemFlex .description .descPrice {
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-height: 40px;
   flex-wrap: nowrap;
 }
 .menuItemFlex .description .descPrice .desc {
@@ -706,7 +700,6 @@ h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.5em;
-  max-height: 40px;
   white-space: nowrap;
 }
 .menuItemFlex .checked {

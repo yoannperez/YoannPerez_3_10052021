@@ -1,9 +1,11 @@
+// Localisation - champ de recherche
 .location__container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+// Hero section
 .reserver {
   display: flex;
   flex-direction: column;
@@ -12,7 +14,9 @@
 
   text-align: center;
   background-color: $bkg-light;
-}
+} // => paramètres du bouton dans components/_buttons.scss
+
+// Section Fonctionnement
 .fonctionnement {
   background-color: white;
   padding: 30px 20px;
@@ -39,8 +43,6 @@
   flex-direction: column;
   width: 100%;
   gap: 20px;
-
-  // margin-bottom: rem(25);
 
   &__choice {
     background-color: $bkg-light;
@@ -78,11 +80,15 @@
   }
 }
 
+// Carte des restaurant
+
+// Section
 .restaurants {
   background-color: $bkg-light;
   padding: 20px 20px;
   padding-bottom: 50px;
 }
+// Conteneur Flex
 .restaurantsFlex {
   display: flex;
   flex-direction: column;
@@ -102,13 +108,13 @@
     object-position: center;
   }
 }
+// Bloc Resaurant
 .blocRestaurant {
   @include box-shadows;
   border-radius: 15px;
   &__img {
     position: relative;
     height: 175px;
-    // overflow: hidden;
     p {
       position: absolute;
       right: 15px;

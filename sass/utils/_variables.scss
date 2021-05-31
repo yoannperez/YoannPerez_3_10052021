@@ -1,17 +1,26 @@
+// Splash screen
+$Loading-time: 3000ms;
+
+
+// Couleurs du site
+
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-third: #99e2d0;
 $bkg-dark: #eeeeee;
 $bkg-light: #f8f8f8;
 
+
 //Shadow-color
 $color-shadow: grey;
 
-//Gradient
+// Définition du Gradient 
 $gradient: linear-gradient($color-secondary, $color-primary);
 
-// big button color
+// Couleur du gros bouton
 $color-big_button: #{$gradient};
+
+
 //Favorite_heart
 $heart-speed: 0.3s;
 $heart-color: linear-gradient(
