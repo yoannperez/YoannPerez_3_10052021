@@ -121,7 +121,7 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: #9356dc;
-  animation: splash ease-in-out 0ms both;
+  animation: splash ease-in-out 2000ms both;
   z-index: 10;
 }
 .splash::after {
@@ -133,7 +133,7 @@ h1 {
   bottom: 0;
   background-color: #ff79da;
   z-index: 11;
-  animation: background-shift ease-in-out 0ms;
+  animation: background-shift ease-in-out 2000ms;
 }
 .splash .image {
   width: 80%;
@@ -155,7 +155,7 @@ h1 {
 
 .progress {
   background: transparent;
-  border: 1px groove #f8f8f8;
+  border: 1px solid #f8f8f8;
   border-radius: 5px;
   width: 70%;
   max-width: 400px;
@@ -168,7 +168,7 @@ h1 {
   height: 5px;
   transform: scaleX(0);
   transform-origin: left;
-  animation: progress-bar 0ms both;
+  animation: progress-bar 2000ms both;
 }
 
 @keyframes menu-title {
