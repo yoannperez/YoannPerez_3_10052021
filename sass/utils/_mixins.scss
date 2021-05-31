@@ -9,7 +9,9 @@
         background: none;
         overflow: hidden;
         border: none;
-        
+        .fa-stack {
+          width: 2em;
+        }
         i {
           color: black;
           font-size: 1em;
