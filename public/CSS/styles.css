@@ -816,6 +816,8 @@ h1 {
   padding: 10px 18px;
 }
 .menuItemFlex:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 800ms;
   cursor: pointer;
 }
 .menuItemFlex:hover .description {
