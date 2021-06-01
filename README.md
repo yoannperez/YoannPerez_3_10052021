@@ -67,9 +67,9 @@ dans votre dossier local pour compiler les fichiers sass en un fichier /public/C
 Seules des maquettes mobiles ont été réalisées. Quelques modifications légères ont été apportées au code pour supporter les version tablettes et desktop.
 
 ### 	Breakpoints:
-* mobile: 576px,
-* tablets: 992px,
-* computer: 1200px.
+* Mobile: 576px,
+* Tablets: 992px,
+* Computer: 1200px.
 
 Les médias queries sont réalisées à l'aide de mixins contenues dans le fichier /sass/utils/_queries.scss. Une modification des breakpoints est posible en modifiant les données de la map $breakpoints.
 

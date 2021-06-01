@@ -12,6 +12,7 @@ body {
 body {
   width: 100%;
   margin: 0 auto;
+  min-width: 200px;
 }
 @media screen and (min-width: 1200px) {
   body {
@@ -176,19 +177,9 @@ h1 {
   animation: progress-bar 3000ms both;
 }
 
-@keyframes menu-title {
-  from {
-    transform: translateY(15px);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1, 1);
-    opacity: 0.9;
-  }
-}
 @keyframes menu-items {
   from {
-    transform: translateY(15px);
+    transform: translateY(20px);
     opacity: 0;
   }
   to {
@@ -356,8 +347,7 @@ h1 {
 .footer {
   background-color: #454545;
   color: white;
-  padding: 5px 20px 0px 25px;
-  padding-bottom: 30px;
+  padding: 5px 20px 30px 25px;
 }
 @media screen and (min-width: 576px) {
   .footer {
@@ -424,7 +414,7 @@ h1 {
 .fonctionnementFlex {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 @media screen and (min-width: 576px) {
   .fonctionnementFlex {
@@ -457,9 +447,7 @@ h1 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 10px auto;
-  margin-left: 10px;
-  margin-right: 20px;
+  margin: 10px 20px 10px 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.209);
   border-radius: 15px;
   z-index: 1;
@@ -498,7 +486,7 @@ h1 {
   color: gray;
 }
 .fonctionContainer__choice p {
-  padding: 0.75em 30px;
+  padding: 0.75em 1.875em;
 }
 
 .restaurants {
@@ -811,15 +799,15 @@ h1 {
   cursor: pointer;
 }
 .menuItemFlex:hover .description {
-  transition: flex 1000ms;
+  transition: flex 800ms;
 }
 .menuItemFlex:hover .checked {
-  transition: all 1000ms;
+  transition: all 800ms;
   width: calc(1.6em + 35px);
 }
 .menuItemFlex:hover .checked i {
   transform: rotate(2turn);
-  transition: transform ease-out 1s;
+  transition: transform ease-out 800ms;
 }
 
 /*# sourceMappingURL=styles.css.map */

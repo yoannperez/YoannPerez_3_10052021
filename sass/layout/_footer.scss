@@ -1,9 +1,7 @@
 .footer {
   background-color: #454545;
   color: white;
-  padding: 5px 20px 0px 25px;
-  padding-bottom: 30px;
-  
+  padding: 5px 20px 30px 25px;
   @include tablets-only{
     text-align: center;
   }
@@ -14,8 +12,7 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
-  
-  
+    
   li {
     margin: 5px;
     line-height: 1em;
@@ -28,7 +25,6 @@
       text-decoration: none;
       color: white;
       .__container {
-        
         display: flex;
         flex-direction: row;
         align-items: center;
