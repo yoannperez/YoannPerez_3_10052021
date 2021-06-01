@@ -50,6 +50,14 @@ h1{
 .footer h2 {
   font-family: "Shrikhand", cursive;
   font-size: 1.1rem;
+  @include tablets-only{
+    font-size: 1.5em;
+    letter-spacing: 1px;
+  }
+  @include computers{
+    font-size: 1.5em;
+    letter-spacing: 1px;
+  }
 }
 
 
