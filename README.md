@@ -7,6 +7,7 @@ Le site est en ligne à l'adresse suivante :
 [https://yoannperez.github.io/YoannPerez_3_10052021/index.html](https://yoannperez.github.io/YoannPerez_3_10052021/index.html)
 
 ***
+
 ##Comment utiliser ce dépot ?
 
 Pour rapatrier ce projet en local, utiliser la commande :
@@ -51,6 +52,7 @@ dans votre dossier local pour compiler les fichiers sass en un fichier /public/C
 * Yoann, développeur web.
 
 ## Contraintes techniques
+
 ###Technologies:
 * Le projet est développé en CSS, sans JavaScript ( mise en forme : FlexBox ).
 * Aucun framework n'est utilisé, en revanche le projet est écrit et organisé à l'aide de SASS. 
