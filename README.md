@@ -1,5 +1,4 @@
 ![](public/Images/ohmyfood.png)
-***
 # Création du site Ohmyfood! Paris
 
 Vous trouverez ici les fichiers rendus pour le projet 03 "Ohmyfood" réalisé dans le cadre du parcours développeur web proposée sur la plateforme Openclassrooms [https://openclassrooms.com/fr/paths/185-developpeur-web](https://openclassrooms.com/fr/paths/185-developpeur-web).
@@ -74,14 +73,14 @@ Les médias queries sont réalisées à l'aide de mixins contenues dans le fichi
 ### 	Autres informations techniques:
 * IDE utilisé: VS Codium
 * W3C validator : Checked
-* Compatibilité: Vérifié sur Chrome, Firefox, Edge & Safari
+* Compatibilité: Vérifié sur Chrome, Firefox, Edge & Safari.
 
 ## Contenu des pages:
 ### Page d’accueil (x1)
 * Affichage de la localisation des restaurants. À terme il sera possible de choisir sa localisation pour trouver des restaurants proches d’un certain lieu.
 * Une courte présentation de l’entreprise.
 * Une section contenant les 4 menus sous forme cartes. Au clic sur la carte, l’utilisateur est redirigé vers la page du menu.
-* Une seconde version de la page d'acceuil a été réalisée afin de faciliter la navigation lors de l'exploration de la maquette.
+* Une seconde version de la page d'acceuil a été réalisée afin de faciliter la navigation lors de l'exploration de la maquette (désactivation du spinner de chargement).
 ### Pages de menu (x4)
 * 4 pages contenant chacune le menu d’un restaurant.
 
@@ -94,7 +93,7 @@ Les médias queries sont réalisées à l'aide de mixins contenues dans le fichi
 * Sur la page d’accueil, il contient le logo du site.
 * Sur les pages de menu, il contient en plus un bouton de retour vers la page d’accueil
 
-## Effets graphiques et animations - Checklist
+## Effets graphiques et animations
 Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils utilisent les animations ou transitions CSS, pas de JavaScript ni de librairie.
 
 ### Boutons
@@ -104,9 +103,9 @@ Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils u
 * À terme, les visiteurs pourront sauvegarder leurs menus préférés. Pour ça, un bouton "J’aime" en forme de cœur est présent sur la maquette. Au clic, il se remplit progressivement. Pour cette première version, l’effet apparaît au survol sur desktop au lieu du clic.
 
 ### Page d’accueil
-Quand l’application aura plus de menus, un “loading spinner” sera nécessaire. Sur cette maquette, nous en avons un aperçu. Il devra apparaître pendant 1 à 3 secondes quand on arrive sur la page d'accueil, couvrir l'intégralité de l'écran, et utiliser les animations CSS (pas de librairie). 
+Quand l’application aura plus de menus, un “loading spinner” sera nécessaire. Sur cette maquette, nous en avons un aperçu. Il apparaît pendant 3 secondes quand on arrive sur la page d'accueil, couvre l'intégralité de l'écran, et utiliser les animations CSS (pas de librairie). 
 
-Le design de ce loader n’est pas défini.
+Le design de ce loader n’est pas définitif mais reprend la charte graphique du site.
 
 ### Pages de menu
 
@@ -117,3 +116,7 @@ Le design de ce loader n’est pas défini.
 * Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant dessus. Cela fait apparaître une petite coche à droite du plat. Cette coche coulisse de la droite vers la gauche. Pour cette première version, l’effet apparaît au survol sur desktop au lieu du clic. 
 
 * Si l’intitulé du plat est trop long, il est rogné avec des points de suspension.
+
+
+***
+![](public/Images/ohmyfood.png)
