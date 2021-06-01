@@ -1,13 +1,13 @@
 ![](public/Images/ohmyfood.png)
 ***
 # Création du site Ohmyfood! Paris
-***
 
 Vous trouverez ici les fichiers rendus pour le projet 03 "Ohmyfood" réalisé dans le cadre du parcours développeur web proposée sur la plateforme Openclassrooms [https://openclassrooms.com/fr/paths/185-developpeur-web](https://openclassrooms.com/fr/paths/185-developpeur-web).
 
 Le site est en ligne à l'adresse suivante :
 [https://yoannperez.github.io/YoannPerez_3_10052021/index.html](https://yoannperez.github.io/YoannPerez_3_10052021/index.html)
 
+***
 ##Comment utiliser ce dépot ?
 
 Pour rapatrier ce projet en local, utiliser la commande :
