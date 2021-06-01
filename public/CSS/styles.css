@@ -157,7 +157,6 @@ h1 {
   width: 80%;
   height: 80px;
   -webkit-mask: url(../../public/Images/ohmyfood@2x.svg) no-repeat 50%;
-  mask: url(../../public/Images/ohmyfood@2x.svg) no-repeat 50%;
   -webkit-mask-size: contain;
   mask-size: contain;
   background-color: white;
@@ -616,7 +615,6 @@ h1 {
 }
 .restaurantJaime .jaime .button .animate {
   background: linear-gradient(to bottom right, #9356dc, #ff79da);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
@@ -697,7 +695,6 @@ h1 {
 }
 .menu .menuTitle .button .animate {
   background: linear-gradient(to bottom right, #9356dc, #ff79da);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
