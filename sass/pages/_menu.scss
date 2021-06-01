@@ -141,6 +141,9 @@
     }
   }
   &:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.40);
+    transition: box-shadow $check-time;
+
     cursor: pointer;
     .description {
       transition: flex $check-time;
