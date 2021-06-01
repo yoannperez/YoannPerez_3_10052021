@@ -71,6 +71,18 @@ h1 {
   font-family: "Shrikhand", cursive;
   font-size: 1.1rem;
 }
+@media screen and (min-width: 576px) {
+  .footer h2 {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer h2 {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+  }
+}
 
 @keyframes splash {
   from {
@@ -464,6 +476,10 @@ h1 {
   opacity: 0;
   background-color: rgba(147, 86, 220, 0.1);
 }
+.fonctionContainer__choice:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 200ms ease-in-out;
+}
 .fonctionContainer__choice:hover::after {
   opacity: 1;
   transition: opacity 200ms ease-in-out;
@@ -568,6 +584,10 @@ h1 {
 .blocRestaurant__footerDescription h3,
 .blocRestaurant__footerDescription p {
   margin: 2px;
+}
+.blocRestaurant:hover {
+  box-shadow: 0 0px 10px #010101;
+  transition: box-shadow 300ms;
 }
 
 .restaurantJaime {

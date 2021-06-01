@@ -71,6 +71,8 @@
       background-color: rgba($color-primary, 0.1);
     }
     &:hover {
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.50);
+      transition: box-shadow 200ms ease-in-out;
       &::after{
         opacity:1;
         transition: opacity 200ms ease-in-out;
@@ -178,6 +180,11 @@
       }
     }
   }
+&:hover{
+  box-shadow: 0 0px 10px darken($color-shadow, 50);
+  transition: box-shadow 300ms;
+  
+}  
 }
 .restaurantJaime {
   position: relative;
