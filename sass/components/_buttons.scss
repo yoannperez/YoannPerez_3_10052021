@@ -27,7 +27,6 @@
     transform: scale(1);
     z-index: -1;
     transition: opacity ease-in-out 50ms;
-
   }
   &:hover {
     cursor:pointer;
@@ -38,6 +37,7 @@
     }
   }
 }
+// Padding du bouton pour les menu
 .bigButton--menu{
   padding: em(13) em(50)
 }

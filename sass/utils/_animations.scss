@@ -1,22 +1,7 @@
-//Menu groups
-@keyframes menu-title{
-    from {
-        
-        transform:translateY(15px);
-        opacity: 0;
-        
-    }
-    to {
-        
-        transform: scale(1, 1);
-        opacity: 0.9;
-    }
-}
-
 //menu-items
 @keyframes menu-items{
     from {
-      transform:translateY(15px);
+      transform:translateY($start-shift);
       opacity: 0;
     }
     to {

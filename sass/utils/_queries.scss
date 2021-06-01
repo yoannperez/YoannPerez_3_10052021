@@ -1,11 +1,4 @@
 //Media queries
-$breakpoints: (
-  mobile: 576px,
-  tablets: 992px,
-  computer: 1200px,
-);
-
-//Media queries
 
 @mixin tablets-only {
     @media screen and (min-width: map-get($breakpoints, mobile)){

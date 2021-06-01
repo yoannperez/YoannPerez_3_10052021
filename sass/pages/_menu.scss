@@ -143,14 +143,14 @@
   &:hover {
     cursor: pointer;
     .description {
-      transition: flex 1000ms;
+      transition: flex $check-time;
     }
     .checked {
-      transition: all 1000ms;
+      transition: all $check-time;
       width: calc(1.6em + 35px);
       i {
         transform: rotate(2turn);
-        transition: transform ease-out 1s;
+        transition: transform ease-out $check-time;
       }
     }
   }

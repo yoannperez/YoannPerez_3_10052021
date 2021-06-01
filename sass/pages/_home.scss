@@ -9,7 +9,6 @@
 .reserver {
   display: flex;
   flex-direction: column;
-
   padding: em(40) em(20) em(57) em(20);
   text-align: center;
   background-color: $bkg-light;
@@ -27,7 +26,7 @@
   
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: rem(30);
   @include tablets-only {
     flex-direction: row;
     justify-content: space-between;
@@ -45,7 +44,6 @@
   width: 100%;
   gap: 20px;
   
-
   &__choice {
     background-color: $bkg-light;
     display: flex;
@@ -56,9 +54,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 10px auto;
-    margin-left: 10px;
-    margin-right: 20px;
+    margin: 10px 20px 10px 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.209);
     border-radius: 15px;
     z-index: 1;
@@ -99,7 +95,7 @@
       color: gray;
     }
     p {
-      padding: em(12) 30px;
+      padding: em(12) em(30);
     }
   }
 }
@@ -186,7 +182,7 @@
 .restaurantJaime {
   position: relative;
 
-  //Bouton J'aime
+  //Bouton Favoris (coeur)
   .jaime {
     width: min-content;
     display: inline-block;
