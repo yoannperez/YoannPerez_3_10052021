@@ -8,7 +8,7 @@ Le site est en ligne à l'adresse suivante :
 
 ***
 
-##Comment utiliser ce dépot ?
+## Comment utiliser ce dépot ?
 
 Pour rapatrier ce projet en local, utiliser la commande :
 
@@ -45,6 +45,7 @@ dans votre dossier local pour compiler les fichiers sass en un fichier /public/C
 
 
 ***
+
 ### Composition de l'équipe:
 * Paul, CTO.
 * Fanny, UX designer.
@@ -53,7 +54,7 @@ dans votre dossier local pour compiler les fichiers sass en un fichier /public/C
 
 ## Contraintes techniques
 
-###Technologies:
+### Technologies:
 * Le projet est développé en CSS, sans JavaScript ( mise en forme : FlexBox ).
 * Aucun framework n'est utilisé, en revanche le projet est écrit et organisé à l'aide de SASS. 
 * Aucun code CSS n'est appliqué via un attribut style dans une balise HTML.
