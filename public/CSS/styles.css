@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  min-width: 200px;
+}
+@media screen and (min-width: 1200px) {
+  body {
+    max-width: 1440px;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -16,23 +36,23 @@ p {
 }
 
 .location__container p {
-  margin-top: em(13);
-  margin-bottom: em(13);
-  padding: 0 em(20);
+  margin-top: 0.8125em;
+  margin-bottom: 0.8125em;
+  padding: 0 1.25em;
   font-size: 1.2rem;
 }
 
 h1 {
   font-size: 1.6rem;
-  margin: 0 em(20);
-  margin-bottom: em(7);
+  margin: 0 1.25em;
+  margin-bottom: 0.4375em;
 }
 
 .reserver p {
   font-size: 1.2rem;
   padding-top: 0;
   margin-top: 0;
-  margin-bottom: em(25);
+  margin-bottom: 1.5625em;
   color: rgba(0, 0, 0, 0.682);
 }
 
@@ -61,26 +81,6 @@ h1 {
   .footer h2 {
     font-size: 1.5em;
     letter-spacing: 1px;
-  }
-}
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #f0f0f0;
-}
-
-body {
-  width: 100%;
-  margin: 0 auto;
-  min-width: 200px;
-}
-@media screen and (min-width: 1200px) {
-  body {
-    max-width: 1440px;
   }
 }
 
@@ -292,12 +292,11 @@ body {
 }
 
 .gradientButton {
-  font-family: "Roboto", sans-serif;
   font-size: 1em;
   line-height: 1.5;
   position: relative;
   display: inline;
-  padding: 0.9375em 1.25em;
+  padding: 0.8125em 1.25em;
   margin: 0 auto;
   text-shadow: 0 0 1px black;
   background: linear-gradient(#ff79da, #9356dc);
