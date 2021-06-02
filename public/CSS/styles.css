@@ -413,6 +413,9 @@ h1 {
   text-align: center;
   background-color: #f8f8f8;
 }
+.reserver a {
+  text-decoration: none;
+}
 
 .fonctionnement {
   background-color: white;
@@ -780,6 +783,11 @@ h1 {
   flex: 4;
   padding: 10px 20px 10px 10px;
   overflow: hidden;
+}
+.menuItemFlex .description :first-child p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menuItemFlex .description .descPrice {
   height: 100%;

@@ -12,6 +12,9 @@
   padding: em(40) em(20) em(57) em(20);
   text-align: center;
   background-color: $bkg-light;
+  a{
+    text-decoration: none;
+  }
 } // => paramètres du bouton dans components/_buttons.scss
 
 // Section Fonctionnement
