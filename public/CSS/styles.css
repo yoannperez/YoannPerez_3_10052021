@@ -292,11 +292,12 @@ h1 {
 }
 
 .gradientButton {
+  font-family: "Roboto", sans-serif;
   font-size: 1em;
   line-height: 1.5;
   position: relative;
   display: inline;
-  padding: 0.8125em 1.25em;
+  padding: 0.9375em 1.25em;
   margin: 0 auto;
   text-shadow: 0 0 1px black;
   background: linear-gradient(#ff79da, #9356dc);
