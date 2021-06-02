@@ -104,7 +104,11 @@
     flex: 4;
     padding: 10px 20px 10px 10px;
     overflow: hidden;
-
+    :first-child p{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
     .descPrice {
       height: 100%;
       display: flex;

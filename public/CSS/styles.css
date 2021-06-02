@@ -784,6 +784,11 @@ h1 {
   padding: 10px 20px 10px 10px;
   overflow: hidden;
 }
+.menuItemFlex .description :first-child p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .menuItemFlex .description .descPrice {
   height: 100%;
   display: flex;
