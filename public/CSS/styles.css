@@ -413,6 +413,9 @@ h1 {
   text-align: center;
   background-color: #f8f8f8;
 }
+.reserver a {
+  text-decoration: none;
+}
 
 .fonctionnement {
   background-color: white;
