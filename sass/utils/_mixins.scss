@@ -18,6 +18,8 @@
           padding: 15px 0;
           
         }
+        // => Création et animation de l'icone coeur favori
+        // => Conflit avec le validateur de W3C et warning de sass
         .animate {
           background: $heart-color;
           // background-clip: text;
@@ -38,4 +40,4 @@
         }
       }
 }
-
+// => _footer

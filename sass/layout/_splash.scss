@@ -1,3 +1,4 @@
+// ==> 3 animations sur l'écran de chargement
 // Définition des keyframes
 
 // Départ du plashscreen
@@ -36,7 +37,7 @@
   }
 }
 
-// SLAPSH SCREEN
+// SPLASH SCREEN
 
 
 .splash {
@@ -55,7 +56,7 @@
   background-color: $color-primary;
   animation: splash ease-in-out $Loading-time both;
   z-index: 10;
-  
+  // ==> L'animation de couleur de fond est crée en gérant l'opacité d'un pseudo élément ::after
   //Background color transition
   &::after {
     content: "";
@@ -69,6 +70,7 @@
     animation: background-shift ease-in-out $Loading-time;
   }
   // Logo definition
+  // Réalisé à l'aide du logo au format SVG. Le test avec un élément de texte faisant apparâitre un changement de font, du au temps de chargement de la fonte.
   .image {
     width:80%;
     height: 80px;
@@ -109,5 +111,5 @@
 }
 
 
-
+// => passage à _home.scss
 

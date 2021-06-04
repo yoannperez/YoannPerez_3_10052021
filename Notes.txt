@@ -1,0 +1,38 @@
+Réparation des éléments :
+	- 1 tab version mobile
+	- 2 tabs versions Tablette et version desktop
+	- VS codium
+
+
+
+Présentation de la maquette.
+En 2 temps : Exploration de la maquette & l'organisation du code
+
+	==> différents points demandés par le projet
+
+----------------------------
+
+----------------------------
+Présentation du code.
+
+- le site est codé en html et css uniquement Aucun framework n'est utilisé, en revanche le projet est écrit à l'aide du pré-processeur SASS. IDE utilisé: VS Codium. W3C validator : Checked
+
+- j'ai choisi d'utiliser sass pour son architecture
+ d'organisation et les possibilités d'utilisation de variables (pour simples à utiliser que les propriétés personnalisée CSS). Organisation plus efficace du code et l'utilisation de variables qui permettent de réaliser de rapides changement, très util pour une première maquette et la maintenance du site sur le long terme.
+
+
+- Structure générale sass => sous dossiers (directories) ==> dans lesquels sont rangés les parties du code dans différents _Partiels
+
+
+
+
+
+- Aborder le problème le problème CSS avec la fonction mask pour le loader
+
+
+
+- dimensionnement et Compression des images tout en gardant un rendu optimal pour les grands écrans & optimiser le temps de chargement.
+
+ => configuration expanded que nous définirons sur compress dans le package.json
+
+

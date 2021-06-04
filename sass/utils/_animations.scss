@@ -9,6 +9,8 @@
       opacity: 1;
     }
   }
+  // ==> déclaration des classes pour les timmings
+
   @for $g from 0 through 2{
     .titleAnim-#{$g}{
     transform-origin: bottom;
@@ -25,4 +27,6 @@
       }
     }
   }
+
+// ==> _Variables
   
