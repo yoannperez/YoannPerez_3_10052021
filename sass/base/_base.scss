@@ -11,6 +11,7 @@ body {
   width: 100%;
   margin: 0 auto;
   min-width: 200px;
+  // limite de taille pour les grands écrans
   @include computers {
     max-width: 1440px;
   }

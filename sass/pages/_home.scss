@@ -12,9 +12,6 @@
   padding: em(40) em(20) em(57) em(20);
   text-align: center;
   background-color: $bkg-light;
-  a{
-    text-decoration: none;
-  }
 } // => paramètres du bouton dans components/_buttons.scss
 
 // Section Fonctionnement
@@ -34,7 +31,8 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 10px;
-  }
+  }  
+  // ==> Medias queries _queries
   @include computers {
     flex-direction: row;
     justify-content: space-evenly;
@@ -61,6 +59,7 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.209);
     border-radius: 15px;
     z-index: 1;
+    // Changement de background par paramètre opacité
     &::after {
       content: "";
       position: absolute;
@@ -130,12 +129,14 @@
     color: black;
     margin: 0;
   }
+
+  // Gestion du bloc 3 dont l'image est de format différent
   div:nth-child(2) a .blocRestaurant img {
     
     object-position: 0px 60%;
   }
 }
-// Bloc Resaurant
+// Bloc Restaurant
 .blocRestaurant {
   @include box-shadows;
   border-radius: 15px;
@@ -145,6 +146,7 @@
   &__img {
     position: relative;
     height: 175px;
+    // ==> élément nouveau au dessus de l'image positionné en absolut
     p {
       position: absolute;
       right: 15px;
@@ -193,6 +195,7 @@
   position: relative;
 
   //Bouton Favoris (coeur)
+  // ==> modification tardive de l'élément afin qu'il soit cliquable et au dessus du lien de la carte
   .jaime {
     width: min-content;
     display: inline-block;
@@ -202,3 +205,4 @@
     @include favorite;
   }
 }
+// ==> vers _mixins

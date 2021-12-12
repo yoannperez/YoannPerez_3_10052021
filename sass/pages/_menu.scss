@@ -8,6 +8,7 @@
     @include tablets-only {
       height: 400px;
     }
+    // modifications pour la version desktop
     @include computers {
       object-position: top;
       object-fit: cover;
@@ -40,6 +41,7 @@
     div.button {
       padding-top: 5px;
     }
+    // => insertion de la mixin de l'icone favori
     @include favorite;
     opacity: 1;
     @include tablets-only {
@@ -104,6 +106,7 @@
     flex: 4;
     padding: 10px 20px 10px 10px;
     overflow: hidden;
+    // Les trois petits points
     :first-child p{
       overflow: hidden;
       text-overflow: ellipsis;
@@ -129,6 +132,7 @@
       }
     }
   }
+  // Définition de la coche déroulante
   // Check green button
   .checked {
     color: white;
@@ -162,3 +166,4 @@
     }
   }
 }
+// => Définition de l'animation des items ==> _animations
