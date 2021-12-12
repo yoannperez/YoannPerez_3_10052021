@@ -84,6 +84,18 @@ h1 {
   }
 }
 
+@-webkit-keyframes splash {
+  from {
+    transform: translateY(0);
+  }
+  99% {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-9999px);
+  }
+}
+
 @keyframes splash {
   from {
     transform: translateY(0);
@@ -95,12 +107,43 @@ h1 {
     transform: translateY(-9999px);
   }
 }
+@-webkit-keyframes background-shift {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes background-shift {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+@-webkit-keyframes progress-bar {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  17% {
+    transform: scaleX(0.18);
+  }
+  24% {
+    transform: scaleX(0.4);
+  }
+  46% {
+    transform: scaleX(0.81);
+  }
+  85%,
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(1);
   }
 }
 @keyframes progress-bar {
@@ -117,7 +160,8 @@ h1 {
   46% {
     transform: scaleX(0.81);
   }
-  85%, 100% {
+  85%,
+  100% {
     opacity: 1;
     transform: scaleX(1);
   }
@@ -139,7 +183,8 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: #9356dc;
-  animation: splash ease-in-out 3000ms both;
+  -webkit-animation: splash ease-in-out 3000ms both;
+          animation: splash ease-in-out 3000ms both;
   z-index: 10;
 }
 .splash::after {
@@ -151,7 +196,8 @@ h1 {
   bottom: 0;
   background-color: #ff79da;
   z-index: 11;
-  animation: background-shift ease-in-out 3000ms;
+  -webkit-animation: background-shift ease-in-out 3000ms;
+          animation: background-shift ease-in-out 3000ms;
 }
 .splash .image {
   width: 80%;
@@ -185,7 +231,19 @@ h1 {
   height: 5px;
   transform: scaleX(0);
   transform-origin: left;
-  animation: progress-bar 3000ms both;
+  -webkit-animation: progress-bar 3000ms both;
+          animation: progress-bar 3000ms both;
+}
+
+@-webkit-keyframes menu-items {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes menu-items {
@@ -200,95 +258,140 @@ h1 {
 }
 .titleAnim-0 {
   transform-origin: bottom;
-  animation: menu-items ease 1000ms;
-  animation-fill-mode: both;
-  animation-delay: 0ms;
+  -webkit-animation: menu-items ease 1000ms;
+          animation: menu-items ease 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
 }
 .titleAnim-0_Anim-0 {
   transform-origin: bottom;
-  animation: menu-items ease-in-out 1000ms;
-  animation-fill-mode: both;
-  animation-delay: 500ms;
+  -webkit-animation: menu-items ease-in-out 1000ms;
+          animation: menu-items ease-in-out 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 .titleAnim-0_Anim-1 {
   transform-origin: bottom;
-  animation: menu-items ease-in-out 1000ms;
-  animation-fill-mode: both;
-  animation-delay: 700ms;
+  -webkit-animation: menu-items ease-in-out 1000ms;
+          animation: menu-items ease-in-out 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
 }
 .titleAnim-0_Anim-2 {
   transform-origin: bottom;
-  animation: menu-items ease-in-out 1000ms;
-  animation-fill-mode: both;
-  animation-delay: 900ms;
+  -webkit-animation: menu-items ease-in-out 1000ms;
+          animation: menu-items ease-in-out 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
 }
 .titleAnim-0_Anim-3 {
   transform-origin: bottom;
-  animation: menu-items ease-in-out 1000ms;
-  animation-fill-mode: both;
-  animation-delay: 1100ms;
+  -webkit-animation: menu-items ease-in-out 1000ms;
+          animation: menu-items ease-in-out 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1100ms;
+          animation-delay: 1100ms;
 }
 
 .titleAnim-1 {
   transform-origin: bottom;
-  animation: menu-items ease 1000ms;
-  animation-fill-mode: both;
-  animation-delay: 500ms;
+  -webkit-animation: menu-items ease 1000ms;
+          animation: menu-items ease 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 .titleAnim-1_Anim-0 {
   transform-origin: bottom;
-  animation: menu-items ease-in-out 1000ms;
-  animation-fill-mode: both;
-  animation-delay: 1000ms;
+  -webkit-animation: menu-items ease-in-out 1000ms;
+          animation: menu-items ease-in-out 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
 }
 .titleAnim-1_Anim-1 {
   transform-origin: bottom;
-  animation: menu-items ease-in-out 1000ms;
-  animation-fill-mode: both;
-  animation-delay: 1200ms;
+  -webkit-animation: menu-items ease-in-out 1000ms;
+          animation: menu-items ease-in-out 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
 }
 .titleAnim-1_Anim-2 {
   transform-origin: bottom;
-  animation: menu-items ease-in-out 1000ms;
-  animation-fill-mode: both;
-  animation-delay: 1400ms;
+  -webkit-animation: menu-items ease-in-out 1000ms;
+          animation: menu-items ease-in-out 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1400ms;
+          animation-delay: 1400ms;
 }
 .titleAnim-1_Anim-3 {
   transform-origin: bottom;
-  animation: menu-items ease-in-out 1000ms;
-  animation-fill-mode: both;
-  animation-delay: 1600ms;
+  -webkit-animation: menu-items ease-in-out 1000ms;
+          animation: menu-items ease-in-out 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1600ms;
+          animation-delay: 1600ms;
 }
 
 .titleAnim-2 {
   transform-origin: bottom;
-  animation: menu-items ease 1000ms;
-  animation-fill-mode: both;
-  animation-delay: 1000ms;
+  -webkit-animation: menu-items ease 1000ms;
+          animation: menu-items ease 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
 }
 .titleAnim-2_Anim-0 {
   transform-origin: bottom;
-  animation: menu-items ease-in-out 1000ms;
-  animation-fill-mode: both;
-  animation-delay: 1500ms;
+  -webkit-animation: menu-items ease-in-out 1000ms;
+          animation: menu-items ease-in-out 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
 }
 .titleAnim-2_Anim-1 {
   transform-origin: bottom;
-  animation: menu-items ease-in-out 1000ms;
-  animation-fill-mode: both;
-  animation-delay: 1700ms;
+  -webkit-animation: menu-items ease-in-out 1000ms;
+          animation: menu-items ease-in-out 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1700ms;
+          animation-delay: 1700ms;
 }
 .titleAnim-2_Anim-2 {
   transform-origin: bottom;
-  animation: menu-items ease-in-out 1000ms;
-  animation-fill-mode: both;
-  animation-delay: 1900ms;
+  -webkit-animation: menu-items ease-in-out 1000ms;
+          animation: menu-items ease-in-out 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1900ms;
+          animation-delay: 1900ms;
 }
 .titleAnim-2_Anim-3 {
   transform-origin: bottom;
-  animation: menu-items ease-in-out 1000ms;
-  animation-fill-mode: both;
-  animation-delay: 2100ms;
+  -webkit-animation: menu-items ease-in-out 1000ms;
+          animation: menu-items ease-in-out 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 2100ms;
+          animation-delay: 2100ms;
 }
 
 .gradientButton {
@@ -530,7 +633,8 @@ h1 {
   margin: 0;
 }
 .restaurantsFlex div:nth-child(2) a .blocRestaurant img {
-  object-position: 0px 60%;
+  -o-object-position: 0px 60%;
+     object-position: 0px 60%;
 }
 
 .blocRestaurant {
@@ -558,12 +662,15 @@ h1 {
   border-radius: 15px 15px 0 0;
   height: 10.9375rem;
   width: 100%;
-  object-fit: cover;
-  object-position: bottom;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 @media screen and (min-width: 576px) {
   .blocRestaurant__img img {
-    object-position: center;
+    -o-object-position: center;
+       object-position: center;
   }
 }
 .blocRestaurant__footer {
@@ -593,6 +700,8 @@ h1 {
   position: relative;
 }
 .restaurantJaime .jaime {
+  width: -webkit-min-content;
+  width: -moz-min-content;
   width: min-content;
   display: inline-block;
   position: absolute;
@@ -634,8 +743,10 @@ h1 {
 .menu-img img {
   height: 250px;
   width: 100%;
-  object-position: center;
-  object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (min-width: 576px) {
   .menu-img img {
@@ -644,8 +755,10 @@ h1 {
 }
 @media screen and (min-width: 1200px) {
   .menu-img img {
-    object-position: top;
-    object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 300px;
   }
 }
@@ -806,6 +919,8 @@ h1 {
 .menuItemFlex .checked {
   color: white;
   background-color: #99e2d0;
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
   width: 0%;
   height: 100%;
@@ -833,5 +948,3 @@ h1 {
   transform: rotate(2turn);
   transition: transform ease-out 800ms;
 }
-
-/*# sourceMappingURL=styles.css.map */
